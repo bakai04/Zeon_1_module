@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+button {
+    border: 0px;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__text,.digital__logo__text {
+    color: #222222;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 8px;
+    letter-spacing: 0px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav div {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    margin-right: 42px;
+    cursor: pointer;
+}
+
+.header__button,.buy__now, .read__more{
+    background-color: #222222;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 18px;
+    padding: 10px 31px 12px 31px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.1s;
+}
+.header__button:hover,.buy__now:hover, .read__more:hover{
+    background-color: #4E4E4E;
+}
+.header__button:active{
+    background-color: #222222;
+    padding: 10px 28px 12px 28px;
+}
+
+.sale {
+    background: url("../img/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sale__inner {
+    text-align: center;
+    padding: 60px 0px 78px 0px;
+}
+
+.sale__title {
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.sale__title__text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+}
+
+.sale__timer {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.sale__timer__count {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.sale__timer__count b {
+    font-weight: 300;
+    margin: 0px 25px 0px 25px
+}
+
+
+.sale__timer__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale__timer__text p {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0px 12px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+}
+
+.digital__app__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 93px 91px 0px 62px;
+    align-items: center;
+}
+
+.digital__app__img {
+    height: 530px;
+    overflow: hidden;
+
+}
+
+.digital__app__title {
+    width: 400px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 60px;
+    color: #222222;
+    margin: 11px 0px 17px 0px;
+}
+.digital__app__text {
+    width: 394px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+}
+.digital__logo__text{
+    font-size: 26px;
+}
+.buy__now, .read__more{
+    padding: 10px 25px 12px 25px;
+    margin-top: 20px;
+}
+.buy__now:active, .read__more:active{
+    background-color: #222222;
+    padding: 10px 22px 12px 22px;
+}
