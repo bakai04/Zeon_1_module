@@ -1,0 +1,21 @@
+.footer__inner{
+    margin: 0  auto;
+    padding: 125px 0px ;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__logo__text{
+    color: #222222;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo{
+    margin: 0 auto;
+}

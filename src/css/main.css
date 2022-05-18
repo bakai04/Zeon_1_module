@@ -6,6 +6,9 @@
 @import url('./components/sale.css');
 @import url('./components/tehnology.css');
 @import url('./components/testimonials.css');
+@import url('./components/download.css');
+@import url('./components/FAQ.css');
+@import url('./components/footer.css');
 *,
 *::before,
 *::after {
@@ -60,6 +63,6 @@ select {
 
 .container {
     width: 100%;
-    max-width: 1150px;
+    max-width: 1168px;
     margin: 0 auto;
 }
