@@ -99,6 +99,7 @@ select {
     font-size: 14px;
     cursor: pointer;
     line-height: 18px;
+    letter-spacing: 2px;
     padding: 10px 31px 12px 31px;
     border-radius: 4px;
     text-transform: uppercase;
@@ -180,14 +181,16 @@ select {
     color: #FFFFFF;
 }
 
-.digital__app__inner {
+.digital__app__inner,
+.tehnology__inner {
     display: flex;
     justify-content: space-between;
     padding: 93px 91px 0px 62px;
     align-items: center;
 }
 
-.digital__app__img {
+.digital__app__img,
+.tehnology__img {
     height: 530px;
     overflow: hidden;
 
@@ -236,7 +239,9 @@ select {
     padding: 100px 0px;
 }
 
-.features__inner__title {
+.features__inner__title,
+.dark__mode__title,
+.pricing__title {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -270,12 +275,13 @@ select {
     margin: 16px 0px 0px 0px;
 }
 
-.features__card__inform{
-    background-color:  #F2F2F2;
+.features__card__inform {
+    background-color: #F2F2F2;
     padding-bottom: 40px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 .features__card__img {
     height: 253px;
     width: 227px;
@@ -313,11 +319,17 @@ select {
 .advantages {
     background-color: #FF5437;
 }
-.advantages__inner{
+
+.advantages__inner {
     display: flex;
     justify-content: space-between;
     padding: 80px 0px 100px 0px;
 }
+
+.advantages__item {
+    text-align: center;
+}
+
 .advantages__item__statistics {
     font-style: normal;
     font-weight: 400;
@@ -331,6 +343,163 @@ select {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
+    margin-top: 20px;
     text-transform: uppercase;
     color: #FFFFFF
+}
+
+.tehnology__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.tehnology__text__subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    width: 409px;
+    color: #222222;
+    margin: 5px 0px 15px 0px;
+}
+
+.tehnology__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    width: 403px;
+}
+
+.dark__mode {
+    background-color: #222222;
+}
+
+.dark__mode__inner {
+    text-align: center;
+    padding: 100px 0px 160px 0px;
+}
+
+.dark__mode__subtitle,
+.pricing__subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5px 0px 14px 0px;
+}
+
+.dark__mode__subtitle span {
+    color: #FF9209;
+}
+
+.dark__mode__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    width: 578px;
+}
+
+.dark__mode__img {
+    width: 400px;
+    margin-top: 36px;
+}
+
+.dark__mode__inner hr {
+    width: 600px;
+    padding: 0px;
+    transform: translateY(-15px);
+}
+
+.dark__mode__button button {
+    background: none;
+    margin: 40px 20px 0px 20px;
+}
+
+.dark__text,
+.light__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.active path {
+    fill: #FF9209;
+}
+
+.active {
+    color: #FF9209;
+}
+
+.pricing__inner {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.pricing__title {
+    color: #222222;
+}
+
+.pricing__subtitle {
+    color: #222222;
+}
+
+.pricing__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+    margin: 0 auto;
+    width: 568px;
+}
+
+.pricing__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+.pricing__card {
+    width: 379px;
+    height: 338px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 49px 0px;
+}
+
+.pricing__card__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0278ED;
+}
+
+.pricing__card__dollar {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 124px;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #0278ED;
+    margin:0px 0px 25px 0px;
+}
+
+.pricing__card__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #222222;
 }
