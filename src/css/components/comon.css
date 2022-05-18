@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    max-width: 1168px;
+    margin: 0 auto;
+}
+.blue{
+    color: #0278ED;
+}
+.background_blue{
+    background: #0278ED;
+    margin-top: 20px;
+}
+.background_black{
+    background: #222222;
+}
+.orange{
+    color: #FF5437;
+}
+.background_orange{
+    background: #FF5437;
+    margin-top: 20px;
+}
+.yellow{
+    color: #FF9209;;
+}
+.background_yellow{
+    background: #FF9209;;
+    margin-top: 20px;
+}
+
+
+.prime__button{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 18px;
+    letter-spacing: 2px;
+    padding: 10px 25px 12px 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.1s;
+}
+
+.prime__button:hover{
+    background-color: #4E4E4E;
+}
+.prime__button:active{
+    background-color: #222222;
+    padding: 10px 23px 12px 23px;
+}
