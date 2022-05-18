@@ -1,0 +1,68 @@
+
+
+.dark__mode {
+    background-color: #222222;
+}
+
+.dark__mode__inner {
+    text-align: center;
+    padding: 100px 0px 160px 0px;
+}
+
+.dark__mode__subtitle,
+.pricing__subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5px 0px 14px 0px;
+}
+
+.dark__mode__subtitle span {
+    color: #FF9209;
+}
+
+.dark__mode__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    width: 578px;
+}
+
+.dark__mode__img {
+    width: 400px;
+    margin-top: 36px;
+}
+
+.dark__mode__inner hr {
+    width: 600px;
+    padding: 0px;
+    transform: translateY(-15px);
+}
+
+.dark__mode__button button {
+    background: none;
+    margin: 40px 20px 0px 20px;
+}
+
+.dark__text,
+.light__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.active path {
+    fill: #FF9209;
+}
+
+.active {
+    color: #FF9209;
+}

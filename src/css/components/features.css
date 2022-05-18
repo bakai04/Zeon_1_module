@@ -1,0 +1,109 @@
+
+.features__inner__title,
+.dark__mode__title,
+.pricing__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.features__inner__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    width: 495px;
+    margin: 0 auto 29px auto;
+    color: #FFFFFF;
+}
+
+.features__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features__card {
+    width: 379px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px 0px 0px 0px;
+    margin: 16px 0px 0px 0px;
+}
+
+.features__card__inform {
+    background-color: #F2F2F2;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.features__card__img {
+    height: 253px;
+    width: 227px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.features__card__img img {
+    width: 227px;
+}
+
+.features__card__icon {
+    position: relative;
+    z-index: 2;
+    top: -32px;
+    margin: 0;
+}
+
+.features__card__title {
+    margin: -18px 0px 11px 0px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.features__card__text {
+    width: 298px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #222222;
+}
+
+.advantages {
+    background-color: #FF5437;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px 100px 0px;
+}
+
+.advantages__item {
+    text-align: center;
+}
+
+.advantages__item__statistics {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.advantages__item__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF
+}

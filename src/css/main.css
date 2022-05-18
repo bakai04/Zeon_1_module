@@ -1,0 +1,65 @@
+@import url('./components/darkMode.css');
+@import url('./components/digitalApp.css');
+@import url('./components/features.css');
+@import url('./components/header.css');
+@import url('./components/pricing.css');
+@import url('./components/sale.css');
+@import url('./components/tehnology.css');
+@import url('./components/testimonials.css');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+button {
+    border: 0px;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}

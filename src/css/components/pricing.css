@@ -1,0 +1,63 @@
+
+.pricing__inner {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.pricing__title {
+    color: #222222;
+}
+
+.pricing__subtitle {
+    color: #222222;
+}
+
+.pricing__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+    margin: 0 auto;
+    width: 568px;
+}
+
+.pricing__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+.pricing__card {
+    width: 379px;
+    height: 338px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 49px 0px;
+}
+
+.pricing__card__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0278ED;
+}
+
+.pricing__card__dollar {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 124px;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #0278ED;
+    margin:0px 0px 25px 0px;
+}
+
+.pricing__card__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #222222;
+}
