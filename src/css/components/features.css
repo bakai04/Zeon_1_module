@@ -1,16 +1,14 @@
 
-.features__inner__title,
-.dark__mode__title,
-.pricing__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.features {
+    background-color: #222222;
 }
 
-.features__inner__text {
+.features__inner {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.features__text {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -35,39 +33,39 @@
     margin: 16px 0px 0px 0px;
 }
 
-.features__card__inform {
+.card__inform {
     background-color: #F2F2F2;
     padding-bottom: 40px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.features__card__img {
+.card__img {
     height: 253px;
     width: 227px;
     overflow: hidden;
     margin: 0 auto;
 }
 
-.features__card__img img {
+.card__img img {
     width: 227px;
 }
 
-.features__card__icon {
+.card__icon {
     position: relative;
     z-index: 2;
     top: -32px;
     margin: 0;
 }
 
-.features__card__title {
+.card__title {
     margin: -18px 0px 11px 0px;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
 }
 
-.features__card__text {
+.card__text {
     width: 298px;
     margin: 0 auto;
     font-weight: 400;
@@ -90,7 +88,7 @@
     text-align: center;
 }
 
-.advantages__item__statistics {
+.item__statistics {
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -98,7 +96,7 @@
     color: #FFFFFF;
 }
 
-.advantages__item__title {
+.item__title {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;

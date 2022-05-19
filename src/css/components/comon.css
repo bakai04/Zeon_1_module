@@ -49,3 +49,26 @@
     background-color: #222222;
     padding: 10px 23px 12px 23px;
 }
+.half-phone {
+    height: 530px;
+    overflow: hidden;
+}
+.features__title,
+.dark-mode__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.dark-text,
+.light__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

@@ -21,13 +21,13 @@
     color: #222222;
 }
 
-.question__answers {
+.question-answers {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.question__answers__inner {
+.question-answers__inner {
     width: 572px;
     margin-top: 26px;
 }

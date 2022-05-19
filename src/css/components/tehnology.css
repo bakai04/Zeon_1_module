@@ -1,6 +1,13 @@
 .tehnology:nth-child(2n){
     background: #F2F2F2;
 }
+
+.tehnology__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 93px 91px 0px 62px;
+    align-items: center;
+}
 .tehnology__title {
     font-weight: 400;
     font-size: 14px;
@@ -10,7 +17,7 @@
     color: #222222;
 }
 
-.tehnology__text__subtitle {
+.tehnology__subtitle {
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
@@ -25,4 +32,8 @@
     line-height: 24px;
     color: #666666;
     width: 403px;
+}
+.tehnology__img{
+    height: 545px;
+    overflow: hidden;
 }

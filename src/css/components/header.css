@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.logo__text {
+.header__logo p {
     color: #222222;
     font-size: 17px;
     font-weight: 600;
@@ -18,12 +18,12 @@
     letter-spacing: -1px;
 }
 
-.header__nav {
+.menu {
     display: flex;
     align-items: center;
 }
 
-.header__nav div {
+.menu div {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

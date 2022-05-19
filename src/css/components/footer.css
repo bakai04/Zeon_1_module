@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.footer__logo__text{
+.footer__logo p{
     color: #222222;
     font-size: 30px;
     font-weight: 600;
@@ -17,6 +17,6 @@
     display: flex;
     justify-content: space-between;
 }
-.footer_logo{
-    margin: 0 auto;
+.footer__logo{
+    text-align: center;
 }

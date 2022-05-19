@@ -19,7 +19,7 @@
     color: #FFFFFF;
 }
 
-.sale__title__text {
+.sale__subtitle {
     font-weight: 700;
     font-size: 30px;
     line-height: 45px;
@@ -27,12 +27,14 @@
     color: #FFFFFF;
 }
 
-.sale__timer {
-    width: fit-content;
+.timer {
+    width: 729px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sale__timer__count {
+.count {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -48,17 +50,20 @@
     margin: 0px 25px 0px 25px
 }
 
-
-.sale__timer__text {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sale__timer__text p {
+.timer__count p {
     font-weight: 700;
     font-size: 24px;
     margin: 0px 12px;
     line-height: 36px;
     letter-spacing: 1.5px;
     color: #FFFFFF;
+}
+.timer div {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 1.1px;
 }

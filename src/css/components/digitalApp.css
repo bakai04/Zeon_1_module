@@ -1,19 +1,16 @@
 
-.digital__app__inner,
-.tehnology__inner {
+.digital__inner{
     display: flex;
     justify-content: space-between;
     padding: 93px 91px 0px 62px;
     align-items: center;
 }
 
-.digital__app__img,
-.tehnology__img {
-    height: 530px;
-    overflow: hidden;
-
+.digital__logo{
+    display: flex;
+    align-items: center;
 }
-.logo__text, .digital__logo__text {
+.digital__logo p{
     color: #222222;
     font-size: 25px;
     font-weight: 600;
@@ -21,7 +18,7 @@
     letter-spacing: -2px;
 }
 
-.digital__app__title {
+.digital__title {
     width: 400px;
     font-style: normal;
     font-weight: 400;
@@ -31,7 +28,7 @@
     margin: 11px 0px 17px 0px;
 }
 
-.digital__app__text {
+.digital__text {
     width: 394px;
     font-weight: 400;
     font-size: 16px;
@@ -40,27 +37,3 @@
     margin-bottom: 20px;
 }
 
-.digital__logo__text {
-    font-size: 26px;
-}
-
-.buy__now,
-.read__more {
-    padding: 10px 25px 12px 25px;
-    margin-top: 20px;
-}
-
-.buy__now:active,
-.read__more:active {
-    background-color: #222222;
-    padding: 10px 22px 12px 22px;
-}
-
-.features {
-    background-color: #222222;
-}
-
-.features__inner {
-    text-align: center;
-    padding: 100px 0px;
-}
