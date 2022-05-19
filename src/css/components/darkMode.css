@@ -42,12 +42,28 @@
     padding: 0px;
     transform: translateY(-15px);
 }
-
-.dark-mode__button button {
-    background: none;
-    margin: 40px 20px 0px 20px;
+.dark-mode__button{
+    display: flex;
+    justify-content: center;
 }
 
+.dark, .light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    margin: 40px 20px 0px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.light__svg, .dark__svg{
+    margin-bottom: 5px;
+}
 .active path {
     fill: #FF9209;
 }

@@ -62,13 +62,3 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.dark-text,
-.light__text {
-    font-weight: 400;
-    font-size: 14px;
-    color: #FFFFFF;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
