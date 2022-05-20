@@ -20,10 +20,7 @@ setInterval(() => {
     minutes.innerHTML=(Math.trunc((endDate-date)/(1000*60))%60<10? "0":"")+Math.trunc((endDate-date)/(1000*60))%60;
     seconds.innerHTML=(Math.trunc((endDate-date)/(1000))%60<10? "0":"")+Math.trunc((endDate-date)/(1000))%60;
 }, 1000);
-// function ChangeMode(){
-//     darkModeButton.classList.toggle("active");
-//     lightModeButton.classList.toggle("active");
-// }
+
 lightModeButton.addEventListener("click", function ChangeMode(){
     darkModeButton.classList.toggle("active");
     lightModeButton.classList.toggle("active");
