@@ -35,25 +35,24 @@
 }
 
 
-.prime__button{
+.prime-button{
     color: #FFFFFF;
     font-weight: 400;
     font-size: 14px;
     cursor: pointer;
     line-height: 18px;
     letter-spacing: 2px;
-    padding: 10px 25px 12px 25px;
+    padding: 11px 25px 11px 25px;
     border-radius: 4px;
     text-transform: uppercase;
     transition: all ease-in-out 0.1s;
 }
 
-.prime__button:hover{
+.prime-button:hover{
     background-color: #4E4E4E;
 }
-.prime__button:active{
-    background-color: #222222;
-    padding: 10px 23px 12px 23px;
+.prime-button:active{
+    transform: scale(0.98);
 }
 .half-phone {
     height: 530px;

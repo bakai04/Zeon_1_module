@@ -35,7 +35,9 @@ ul[class],
 ol[class] {
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+}
 button {
     border: 0px;
 }
