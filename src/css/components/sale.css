@@ -3,6 +3,7 @@
     background: url("../../img/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 90px;
 }
 
 .sale__inner {

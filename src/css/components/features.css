@@ -7,6 +7,14 @@
     text-align: center;
     padding: 100px 0px;
 }
+.features__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 .features__text {
     font-style: normal;

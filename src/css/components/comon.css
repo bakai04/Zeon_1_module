@@ -13,6 +13,12 @@
 .background_black{
     background: #222222;
 }
+.black{
+    color:#222222;
+}
+.white{
+    color:#FFFFFF
+}
 .orange{
     color: #FF5437;
 }
@@ -53,12 +59,12 @@
     height: 530px;
     overflow: hidden;
 }
-.features__title,
-.dark-mode__title {
+
+.change-mode__subtitle,
+.pricing__subtitle {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    margin: 5px 0px 14px 0px;
 }

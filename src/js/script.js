@@ -2,6 +2,9 @@ let days = document.querySelector(".day");
 let seconds = document.querySelector(".seconds")
 let minutes = document.querySelector(".minutes")
 let hourses = document.querySelector(".hours")
+let darkModeButton= document.querySelector(".dark")
+let lightModeButton= document.querySelector(".light")
+let changeMode=document.querySelector(".change-mode")
 let store;
 let monthDay=[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 fetch("../src/confige.json").then((resp)=> resp.json()).then(json=> store=json);
@@ -17,3 +20,17 @@ setInterval(() => {
     minutes.innerHTML=(Math.trunc((endDate-date)/(1000*60))%60<10? "0":"")+Math.trunc((endDate-date)/(1000*60))%60;
     seconds.innerHTML=(Math.trunc((endDate-date)/(1000))%60<10? "0":"")+Math.trunc((endDate-date)/(1000))%60;
 }, 1000);
+// function ChangeMode(){
+//     darkModeButton.classList.toggle("active");
+//     lightModeButton.classList.toggle("active");
+// }
+lightModeButton.addEventListener("click", function ChangeMode(){
+    darkModeButton.classList.toggle("active");
+    lightModeButton.classList.toggle("active");
+    changeMode.classList.toggle("dark-mode");
+});
+darkModeButton.addEventListener("click", function ChangeMode(){
+    darkModeButton.classList.toggle("active");
+    lightModeButton.classList.toggle("active");
+    changeMode.classList.toggle("dark-mode");
+});
