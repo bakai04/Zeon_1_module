@@ -89,11 +89,11 @@
     padding: 80px 0px 100px 0px;
 }
 
-.advantages__item {
+.advantages__items {
     text-align: center;
 }
 
-.item__statistics {
+.advantages__statistics {
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -101,7 +101,7 @@
     color: #FFFFFF;
 }
 
-.item__title {
+.advantages__title {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
