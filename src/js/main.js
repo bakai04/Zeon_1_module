@@ -3,15 +3,18 @@ import {
   scrollToSection,
   ChangeMode,
   form,
-  inputValidation
+  inputValidation,
+  onClickPlanButton
 } from "./functons/index.js";
+let planButton=document.querySelectorAll(".form__button")
 let darkModeButton = document.querySelector(".dark");
 let lightModeButton = document.querySelector(".light");
 let features = document.querySelector(".features");
 let pricing = document.querySelector(".pricing");
 let testimonials = document.querySelector(".testimonials");
 let faq = document.querySelector(".faq");
-
+let buttonByNow= document.querySelectorAll(".buy-now");
+let checkbox= document.querySelectorAll(".checkbox__item")
 let date = new Date();
 let endDate;
 const getDate = async () => {
@@ -57,12 +60,30 @@ darkModeButton.addEventListener("click", () => {
   ChangeMode("dark");
 });
 
-document.querySelector("#buy-now").addEventListener("click", () => {
+buttonByNow[0].addEventListener("click", () => {
   form();
 }); 
+buttonByNow[1].addEventListener("click", () => {
+  form();
+}); 
+buttonByNow[2].addEventListener("click", () => {
+  form();
+}); 
+buttonByNow[3].addEventListener("click", () => {
+  form();
+}); 
+
+
 document.querySelector("#name").addEventListener("change", ()=>{
   inputValidation(document.querySelector("#name").value, 'name')
 })
 document.querySelector("#email").addEventListener("change", ()=>{
   inputValidation(document.querySelector("#email").value, 'email')
 })
+
+onClickPlanButton(planButton, 2)
+planButton[0].addEventListener("click", ()=>{onClickPlanButton(planButton, 0)});
+planButton[1].addEventListener("click", ()=>{onClickPlanButton(planButton, 1)});
+planButton[2].addEventListener("click", ()=>{onClickPlanButton(planButton, 2)});
+
+alert(checkbox[0]);

@@ -32,7 +32,8 @@
     color: #000000;
 }
 
-.modal-page__form input {
+#name,
+#email {
     width: 330px;
     height: 42px;
     border: 0px;
@@ -41,8 +42,8 @@
     border-radius: 4px;
 }
 
-.modal-page__form input[type=text],
-.modal-page__form input[type=email] {
+#name[type=text],
+#email[type=email] {
     padding-left: 17px;
     font-weight: 400;
     font-size: 16px;
@@ -51,6 +52,8 @@
 }
 
 .form__button {
+    text-align: justify;
+    align-items: center;
     background-color: #FFFFFF;
     border: 1px solid #7D7D7D;
     cursor: pointer;
@@ -58,6 +61,18 @@
     height: 42px;
     margin-bottom: 11px;
     border-radius: 4px;
+}
+
+.form__button p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.check-mark {
+    position: absolute;
+    margin-top: 2px;
 }
 
 .form__button:active {
@@ -80,27 +95,21 @@
 }
 
 .form__checkbox {
-    align-items: flex-start;
-}
-
-.checkbox__item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
-.checkbox__item input {
-    margin: 0px 15px 0px 0px;
+.checkbox__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
     cursor: pointer;
-    width: 24px;
-    background: #FFFFFF;
-    border: 2px solid #0278ED;
-    border-radius: 4px;
 }
 
 .form__button-submit {
     background: #222222;
     cursor: pointer;
-
     width: 172px;
     height: 40px;
 }

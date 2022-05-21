@@ -86,7 +86,7 @@
               The H(app)y app is the latest & greatest in phone photography.
               It's available in the App Store right now. Go check it out!
             </p>
-            <button class="prime-button background_black" id="buy-now" type="button">
+            <button class="prime-button background_black buy-now" type="button">
               buy now
             </button>
             <button class="prime-button background_black" type="button">
@@ -188,7 +188,6 @@
                   src="./src/img/icons/Uploads.svg"
                   alt="icons"
                 />
-
                 <p class="card__title" style="color: #00c6df">Calendar view</p>
                 <p class="card__text">
                   Duis tristique sed lorem a vestibulum. Cras commodo consequat
@@ -356,7 +355,10 @@
               <h3 class="price__title blue">Standart</h3>
               <p class="price__dollar blue">$9</p>
               <p class="price__subtitle">Monthly</p>
-              <button class="prime-button background_blue" id="buy-now" type="button">
+              <button
+                class="prime-button background_blue buy-now"
+                type="button"
+              >
                 Buy now
               </button>
             </article>
@@ -364,7 +366,10 @@
               <h3 class="price__title orange">Standart</h3>
               <p class="price__dollar orange">$9</p>
               <p class="price__subtitle">Monthly</p>
-              <button class="prime-button background_orange" id="buy-now" type="button">
+              <button
+                class="prime-button background_orange buy-now"
+                type="button"
+              >
                 Buy now
               </button>
             </article>
@@ -372,7 +377,10 @@
               <h3 class="price__title yellow">Standart</h3>
               <p class="price__dollar yellow">$9</p>
               <p class="price__subtitle">Monthly</p>
-              <button class="prime-button background_yellow" id="buy-now" type="button">
+              <button
+                class="prime-button background_yellow buy-now"
+                type="button"
+              >
                 Buy now
               </button>
             </article>
@@ -499,34 +507,75 @@
           <p class="on-invalid-email display-none">this field is reqiured*</p>
           <p>Your plan?</p>
           <button type="button" class="form__button form__button--blue">
-            Standart
+            <svg
+              class="check-mark"
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.81798 15.7789L0.453979 9.41495L3.28398 6.58495L6.81798 10.1289L16.716 0.220947L19.546 3.05095L6.81798 15.7789Z"
+                fill="white"
+              />
+            </svg>
+            <p>Standart</p>
           </button>
           <button type="button" class="form__button form__button--orange">
-            Premium
+            <svg
+              class="check-mark"
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.81798 15.7789L0.453979 9.41495L3.28398 6.58495L6.81798 10.1289L16.716 0.220947L19.546 3.05095L6.81798 15.7789Z"
+                fill="white"
+              />
+            </svg>
+            <p>Premium</p>
           </button>
           <button type="button" class="form__button form__button--yellow">
-            Lifetime
+            <svg
+              class="check-mark"
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.81798 15.7789L0.453979 9.41495L3.28398 6.58495L6.81798 10.1289L16.716 0.220947L19.546 3.05095L6.81798 15.7789Z"
+                fill="white"
+              />
+            </svg>
+            <p>Lifetime</p>
           </button>
           <p>How did you know about our app?</p>
           <div class="form__checkbox">
-            <div class="checkbox__item">
-              <input type="checkbox" />
-              <p>Facebook</p>
-            </div>
-            <div class="checkbox__item">
-              <input type="checkbox" />
-              <p>Instagram</p>
-            </div>
-            <div class="checkbox__item">
-              <input type="checkbox" />
-              <p>YouTube</p>
-            </div>
-            <div class="checkbox__item">
-              <input type="checkbox" />
-              <p>Other</p>
-            </div>
+            <label class="checkbox__item">
+              <input type="checkbox"/>
+              <span class="checkbox__title">Facebook</span>
+            </label>
+            <label class="checkbox__item">
+              <input type="checkbox"/>
+              <span class="checkbox__title">Instagram</span>
+            </label>
+            <label class="checkbox__item">
+              <input type="checkbox"/>
+              <span class="checkbox__title">YouTube</span>
+            </label>
+            <label class="checkbox__item">
+              <input type="checkbox"/>
+              <span class="checkbox__title">Other</span>
+            </label>
           </div>
-          <button type="button" class="prime-button form__button-submit">send</button>
+          <button type="button" class="prime-button form__button-submit">
+            send
+          </button>
         </form>
       </div>
     </section>
