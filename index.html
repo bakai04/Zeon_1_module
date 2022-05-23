@@ -37,7 +37,7 @@
         </div>
       </div>
     </header>
-    <section class="sale">
+    <section id="sale">
       <div class="container">
         <div class="sale__inner">
           <h2 class="sale__title">big sale on lifetime plan</h2>
@@ -66,7 +66,6 @@
         </div>
       </div>
     </section>
-    >
     <section class="digital">
       <div class="container">
         <div class="digital__inner">
@@ -350,6 +349,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             scelerisque aliquam odio et faucibus.
           </p>
+
           <div class="pricing__cards">
             <article class="price">
               <h3 class="price__title blue">Standart</h3>
@@ -362,6 +362,7 @@
                 Buy now
               </button>
             </article>
+
             <article class="price">
               <h3 class="price__title orange">Standart</h3>
               <p class="price__dollar orange">$9</p>
@@ -373,6 +374,7 @@
                 Buy now
               </button>
             </article>
+
             <article class="price">
               <h3 class="price__title yellow">Standart</h3>
               <p class="price__dollar yellow">$9</p>
@@ -495,7 +497,7 @@
         </div>
       </div>
     </div>
-    <section class="modal-page display-none">
+    <div class="modal-page display-none">
       <div class="modal-page__inner">
         <p class="modal-page__title">
           Leave a request for the purchase of goods
@@ -557,28 +559,32 @@
           <p>How did you know about our app?</p>
           <div class="form__checkbox">
             <label class="checkbox__item">
-              <input type="checkbox"/>
+              <div class="fake-checkbox"></div>
+              <input type="checkbox" class="checkbox__input"/>
               <span class="checkbox__title">Facebook</span>
             </label>
             <label class="checkbox__item">
-              <input type="checkbox"/>
-              <span class="checkbox__title">Instagram</span>
+              <div class="fake-checkbox"></div>
+              <input type="checkbox" class="checkbox__input"/>
+              <span class="checkbox__title" >Instagram</span>
             </label>
             <label class="checkbox__item">
-              <input type="checkbox"/>
+              <div class="fake-checkbox"></div>
+              <input type="checkbox" class="checkbox__input">
               <span class="checkbox__title">YouTube</span>
             </label>
             <label class="checkbox__item">
-              <input type="checkbox"/>
+              <div class="fake-checkbox"></div>
+              <input type="checkbox" class="checkbox__input"/>
               <span class="checkbox__title">Other</span>
             </label>
           </div>
-          <button type="button" class="prime-button form__button-submit">
+          <button type="button" disabled="true" class="prime-button form__button-submit">
             send
           </button>
         </form>
       </div>
-    </section>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">

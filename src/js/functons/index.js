@@ -73,6 +73,9 @@ const functions = {
         planButton[i].style.color= color[i];  
       }
     }
+  },
+  onClickCheckbox: function(fakeCheckbox, checkboxInput){
+    fakeCheckbox.classList.toggle('fake-checkbox--checked', checkboxInput.checked)
   }
 };
 
@@ -82,4 +85,6 @@ export const ChangeMode = functions.ChangeMode;
 export const form = functions.form;
 export const inputValidation = functions.inputValidation;
 export const onClickPlanButton = functions.onClickPlanButton;
+export const onClickCheckbox = functions.onClickCheckbox;
+
 

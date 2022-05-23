@@ -4,32 +4,41 @@ import {
   ChangeMode,
   form,
   inputValidation,
-  onClickPlanButton
+  onClickPlanButton,
+  onClickCheckbox,
 } from "./functons/index.js";
-let planButton=document.querySelectorAll(".form__button")
+let planButton = document.querySelectorAll(".form__button");
 let darkModeButton = document.querySelector(".dark");
 let lightModeButton = document.querySelector(".light");
 let features = document.querySelector(".features");
 let pricing = document.querySelector(".pricing");
 let testimonials = document.querySelector(".testimonials");
 let faq = document.querySelector(".faq");
-let buttonByNow= document.querySelectorAll(".buy-now");
-let checkbox= document.querySelectorAll(".checkbox__item")
+let buttonByNow = document.querySelectorAll(".buy-now");
+let checkboxLabel = document.querySelectorAll(".checkbox__item");
+let fakeCheckbox = document.querySelectorAll(".fake-checkbox");
+let checkboxInput = document.querySelectorAll(".checkbox__input");
 let date = new Date();
 let endDate;
+
+
+
 const getDate = async () => {
-  await fetch("./src/config.json")
-    .then((resp) => resp.json())
-    .then((store) => {
-      endDate = new Date(
-        Number(store.timerEndDate.slice(6, 10)), //Year
-        Number(store.timerEndDate.slice(3, 5)) - 1, //month
-        Number(store.timerEndDate.slice(0, 2)), //day
-        Number(store.timerEndDate.slice(11, 13)), //hours
-        Number(store.timerEndDate.slice(14, 16)) //minute
-      );
-    });
+  const data = await fetch("./src/config.json").then((resp) => resp.json())
+  if (data) {
+    endDate = new Date(
+      Number(data.timerEndDate.slice(6, 10)), //Year
+      Number(data.timerEndDate.slice(3, 5)) - 1, //month
+      Number(data.timerEndDate.slice(0, 2)), //day
+      Number(data.timerEndDate.slice(11, 13)), //hours
+      Number(data.timerEndDate.slice(14, 16)) //minute
+    );
+    return data.json();
+  } else {
+    return new Error('happened some shit!!!')
+  }
 };
+
 getDate();
 setInterval(() => {
   if (endDate - date > 0) {
@@ -60,30 +69,30 @@ darkModeButton.addEventListener("click", () => {
   ChangeMode("dark");
 });
 
-buttonByNow[0].addEventListener("click", () => {
-  form();
-}); 
-buttonByNow[1].addEventListener("click", () => {
-  form();
-}); 
-buttonByNow[2].addEventListener("click", () => {
-  form();
-}); 
-buttonByNow[3].addEventListener("click", () => {
-  form();
-}); 
+for (let i = 0; i <= 3; i++) {
+  buttonByNow[i].addEventListener("click", () => {
+    form();
+    onClickPlanButton(planButton, i == 0 ? 2 : i - 1);
+  });
+}
+
+document.querySelector("#name").addEventListener("change", () => {
+  inputValidation(document.querySelector("#name").value, "name");
+});
+document.querySelector("#email").addEventListener("change", () => {
+  inputValidation(document.querySelector("#email").value, "email");
+});
+
+for (let i = 0; i <= 2; i++) {
+  planButton[i].addEventListener("click", () => {
+    onClickPlanButton(planButton, i);
+  });
+}
+
+for (let i = 0; i <= 3; i++) {
+  checkboxLabel[i].addEventListener("click", () => {
+    onClickCheckbox(fakeCheckbox[i], checkboxInput[i]);
+  });
+}
 
 
-document.querySelector("#name").addEventListener("change", ()=>{
-  inputValidation(document.querySelector("#name").value, 'name')
-})
-document.querySelector("#email").addEventListener("change", ()=>{
-  inputValidation(document.querySelector("#email").value, 'email')
-})
-
-onClickPlanButton(planButton, 2)
-planButton[0].addEventListener("click", ()=>{onClickPlanButton(planButton, 0)});
-planButton[1].addEventListener("click", ()=>{onClickPlanButton(planButton, 1)});
-planButton[2].addEventListener("click", ()=>{onClickPlanButton(planButton, 2)});
-
-alert(checkbox[0]);
