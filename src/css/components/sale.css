@@ -59,12 +59,11 @@
     letter-spacing: 1.5px;
     color: #FFFFFF;
 }
-.timer div {
+.timer span {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
     color: #FFFFFF;
     font-size: 100px;
-    line-height: 150px;
     letter-spacing: 1.1px;
 }

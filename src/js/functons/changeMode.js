@@ -1,13 +1,8 @@
 function changeMode() {
-    
-  let darkModeButton = document.querySelector(".dark");
-  let lightModeButton = document.querySelector(".light");
-
-  lightModeButton.addEventListener("click", () => {
+  document.querySelector(".light").addEventListener("click", () => {
     ChangeMode("light");
   });
-
-  darkModeButton.addEventListener("click", () => {
+  document.querySelector(".dark").addEventListener("click", () => {
     ChangeMode("dark");
   });
 
@@ -19,5 +14,4 @@ function changeMode() {
     document.querySelector(".change-mode").classList.toggle("dark-mode");
   }
 }
-
 export default changeMode;

@@ -1,7 +1,7 @@
 function scroll() {
-  const features = document.querySelector(".features");
-  const pricing = document.querySelector(".pricing");
-  const testimonials = document.querySelector(".testimonials");
+  const features = document.querySelector("#features");
+  const pricing = document.querySelector("#pricing");
+  const testimonials = document.querySelector("#testimonials");
   const faq = document.querySelector(".faq");
 
   document.querySelector(".menu__features").addEventListener("click", () => {

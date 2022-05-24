@@ -26,13 +26,17 @@
             <p>H(app)y</p>
           </a>
           <nav class="menu">
-            <div class="menu__features">Features</div>
-            <div class="menu__pricing">Pricing</div>
-            <div class="menu__testimonials">Testimonials</div>
-            <div class="menu__faq">FAQ</div>
-            <button class="prime-button background_black" type="button">
-              Get this app
-            </button>
+            <ul>
+              <li class="menu__features">Features</li>
+              <li class="menu__pricing">Pricing</li>
+              <li class="menu__testimonials">Testimonials</li>
+              <li class="menu__faq">FAQ</li>
+            </ul>
+            <a href="https://www.apple.com/ru/app-store/" target="_blank">
+              <button class="prime-button background_black" type="button">
+                Get this app
+              </button>
+            </a>
           </nav>
         </div>
       </div>
@@ -47,17 +51,17 @@
               <div class="count day">00</div>
               <p>days</p>
             </div>
-            <div>|</div>
+            <span>|</span>
             <div class="timer__count">
               <div class="count hours">00</div>
               <p>hours</p>
             </div>
-            <div>|</div>
+            <span>|</span>
             <div class="timer__count">
               <div class="count minutes">00</div>
               <p>minutes</p>
             </div>
-            <div>|</div>
+            <span>|</span>
             <div class="timer__count">
               <div class="count seconds">00</div>
               <p>seconds</p>
@@ -66,7 +70,7 @@
         </div>
       </div>
     </section>
-    <section class="digital">
+    <section id="digital">
       <div class="container">
         <div class="digital__inner">
           <div>
@@ -98,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section id="features">
       <div class="container">
         <div class="features__inner">
           <h2 class="features__title">Features</h2>
@@ -286,10 +290,10 @@
         </div>
       </div>
     </div>
-    <div class="change-mode dark-mode">
+    <section class="change-mode dark-mode">
       <div class="container">
         <div class="change-mode__inner">
-          <p class="change-mode__title">Dark mode</p>
+          <h2 class="change-mode__title">Dark mode</h2>
           <p class="change-mode__subtitle">
             Also available in <span class="mode-name">dark</span>.
           </p>
@@ -339,8 +343,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="pricing">
+    </section>
+    <section id="pricing">
       <div class="container">
         <div class="pricing__inner">
           <h3 class="pricing__title">Pricing</h3>
@@ -389,11 +393,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="testimonials">
+    </section>
+    <section id="testimonials">
       <div class="container">
         <div class="testimonials__inner">
-          <p class="testimonials__title">testimonials</p>
+          <h2 class="testimonials__title">testimonials</h2>
           <p class="testimonials__subtitle">Don't take our word for it.</p>
           <p class="testimonials__text">See what our customers are saying.</p>
           <div class="testimonials__cards">
@@ -432,26 +436,26 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="download">
+    </section>
+    <section id="download">
       <div class="container">
         <div class="download__inner">
-          <p class="download__title">download</p>
+          <h2 class="download__title">download</h2>
           <p class="download__subtitle">It's available right now!</p>
           <p class="download__text">
             Duis tristique sed lorem a vestibulum. Cras commodo consequat orci,
             in convallis risus egestas non.
           </p>
           <a href="https://www.apple.com/ru/app-store/" target="_blank"
-            ><img src="./src/img/icons/appstore.png" alt="appstore"
-          /></a>
+            ><img src="./src/img/icons/appstore.png" alt="appstore" />
+          </a>
         </div>
       </div>
-    </div>
-    <div class="faq">
+    </section>
+    <section class="faq">
       <div class="container">
         <div class="faq__inner">
-          <p class="faq__title">FAQ</p>
+          <h2 class="faq__title">FAQ</h2>
           <p class="faq__subtitle">Some questions & some answers</p>
           <div class="question-answers">
             <div class="question-answers__inner">
@@ -496,95 +500,63 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal-page display-none">
+    </section>
+    <section class="modal-page display-none">
       <div class="modal-page__inner">
-        <p class="modal-page__title">
+        <img class="modal-page__close" src="./src/img/icons/close.svg"></img>
+        <h2 class="modal-page__title">
           Leave a request for the purchase of goods
-        </p>
+        </h2>
         <form class="modal-page__form">
           <input type="text" placeholder="name" id="name" />
           <p class="on-invalid-name display-none">this field is reqiured*</p>
           <input type="email" placeholder="email" id="email" />
+
           <p class="on-invalid-email display-none">this field is reqiured*</p>
-          <p>Your plan?</p>
-          <button type="button" class="form__button form__button--blue">
-            <svg
-              class="check-mark"
-              width="20"
-              height="16"
-              viewBox="0 0 20 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.81798 15.7789L0.453979 9.41495L3.28398 6.58495L6.81798 10.1289L16.716 0.220947L19.546 3.05095L6.81798 15.7789Z"
-                fill="white"
-              />
-            </svg>
+          <p class="form__question">Your plan?</p>
+          
+          <label class="form__radio form__radio--blue">
+            <img src="./src/img/icons/CheckedWhite.svg">
             <p>Standart</p>
-          </button>
-          <button type="button" class="form__button form__button--orange">
-            <svg
-              class="check-mark"
-              width="20"
-              height="16"
-              viewBox="0 0 20 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.81798 15.7789L0.453979 9.41495L3.28398 6.58495L6.81798 10.1289L16.716 0.220947L19.546 3.05095L6.81798 15.7789Z"
-                fill="white"
-              />
-            </svg>
-            <p>Premium</p>
-          </button>
-          <button type="button" class="form__button form__button--yellow">
-            <svg
-              class="check-mark"
-              width="20"
-              height="16"
-              viewBox="0 0 20 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.81798 15.7789L0.453979 9.41495L3.28398 6.58495L6.81798 10.1289L16.716 0.220947L19.546 3.05095L6.81798 15.7789Z"
-                fill="white"
-              />
-            </svg>
-            <p>Lifetime</p>
-          </button>
-          <p>How did you know about our app?</p>
+            <input type="radio" name="plan" class="radio__button">
+          </label>
+          
+          <label class="form__radio form__radio--orange">
+            <input type="radio" name="plan" class="radio__button">
+          </label>
+          
+          <label class="form__radio form__radio--yellow">
+            <input type="radio" name="plan" class="radio__button">
+          </label>
+          
+          <p class="form__question">How did you know about our app?</p>
+          
           <div class="form__checkbox">
             <label class="checkbox__item">
-              <div class="fake-checkbox"></div>
-              <input type="checkbox" class="checkbox__input"/>
+              <span class="fake-checkbox"></span>
+              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">Facebook</span>
             </label>
             <label class="checkbox__item">
-              <div class="fake-checkbox"></div>
-              <input type="checkbox" class="checkbox__input"/>
-              <span class="checkbox__title" >Instagram</span>
+              <span class="fake-checkbox"></span>
+              <input type="checkbox" class="checkbox__input" />
+              <span class="checkbox__title">Instagram</span>
             </label>
             <label class="checkbox__item">
-              <div class="fake-checkbox"></div>
-              <input type="checkbox" class="checkbox__input">
+              <span class="fake-checkbox"></span>
+              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">YouTube</span>
             </label>
             <label class="checkbox__item">
-              <div class="fake-checkbox"></div>
-              <input type="checkbox" class="checkbox__input"/>
+              <span class="fake-checkbox"></span>
+              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">Other</span>
             </label>
           </div>
-          <button type="button" disabled="true" class="prime-button form__button-submit">
-            send
-          </button>
+          <button type="button" class="prime-button form__button-submit">send</button>
         </form>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">

@@ -1,7 +1,11 @@
 function onOpenForm() {
+  let planButton = document.querySelectorAll(".form__button");
   let buttonByNow = document.querySelectorAll(".buy-now");
-
-
+  
+  document.querySelector(".modal-page__close").addEventListener("click",()=>{
+    form();
+  })
+   
   for (let i = 0; i <= 3; i++) {
     buttonByNow[i].addEventListener("click", () => {
       form();

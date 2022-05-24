@@ -18,10 +18,10 @@ function timer(){
           return new Error('happened some shit!!!')
         }
     };
-
-
     getDate();
-  
+
+    
+    
     function timerCount(endDate) {
         const date = new Date();
         let interval = endDate - date;  
@@ -38,6 +38,8 @@ function timer(){
             String(minute).length < 2 ? "0" + minute : minute;
           document.querySelector(".seconds").innerHTML =
             String(seconds).length < 2 ? "0" + seconds : seconds;
+        }else{
+            document.querySelector(".timer").style.display="none"
         }
       }
 

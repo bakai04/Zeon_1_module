@@ -23,6 +23,8 @@ function validations() {
       onClickCheckbox(fakeCheckbox[i], checkboxInput[i]);
     });
   }
+
+  
   function onClickPlanButton(planButton, index) {
     let color = ["#0278ED", "#FF5437", "#FF9209"];
     for (let i = 0; i != 3; i++) {
