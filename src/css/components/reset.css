@@ -25,12 +25,6 @@ dl,
 dd {
     margin: 0;
 }
-
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-}
-
 ul[class],
 ol[class] {
     list-style: none;

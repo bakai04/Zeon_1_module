@@ -26,12 +26,32 @@
             <p>H(app)y</p>
           </a>
           <nav class="menu">
-            <ul>
-              <li class="menu__features">Features</li>
-              <li class="menu__pricing">Pricing</li>
-              <li class="menu__testimonials">Testimonials</li>
-              <li class="menu__faq">FAQ</li>
-            </ul>
+            <a class="menu__item" href="#features">Features</a>
+            <a class="menu__item" href="#pricing">Pricing</a>
+            <a class="menu__item" href="#testimonials">Testimonials</a>
+            <a class="menu__item" href="#faq">FAQ</a>
+            <form action="https://www.apple.com/ru/app-store/" target="_blank">
+              <button class="prime-button background_black" type="button">
+                Get this app
+              </button>
+            </form>
+          </nav>
+          <!-- <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> -->
+        </div>
+      </div>
+    </header>
+    <!-- <div class="mobail-menu">
+      <div class="container">
+        <div class="mobail-menu__inner">
+          <nav class="menu">
+            <a class="menu__item" href="#features">Features</a>
+            <a class="menu__item" href="#pricing">Pricing</a>
+            <a class="menu__item" href="#testimonials">Testimonials</a>
+            <a class="menu__item" href="#faq">FAQ</a>
             <a href="https://www.apple.com/ru/app-store/" target="_blank">
               <button class="prime-button background_black" type="button">
                 Get this app
@@ -40,7 +60,7 @@
           </nav>
         </div>
       </div>
-    </header>
+    </div> -->
     <section id="sale">
       <div class="container">
         <div class="sale__inner">
@@ -308,7 +328,7 @@
           />
           <hr />
           <div class="change-mode__button">
-            <button class="light" type="button">
+            <button class="light-btn" type="button">
               <svg
                 class="light__svg"
                 width="24"
@@ -324,7 +344,7 @@
               </svg>
               Light Mode
             </button>
-            <button class="dark active" type="button">
+            <button class="dark-btn active" type="button">
               <svg
                 class="dark__svg"
                 width="24"
@@ -452,7 +472,7 @@
         </div>
       </div>
     </section>
-    <section class="faq">
+    <section id="faq">
       <div class="container">
         <div class="faq__inner">
           <h2 class="faq__title">FAQ</h2>
@@ -503,57 +523,109 @@
     </section>
     <section class="modal-page display-none">
       <div class="modal-page__inner">
-        <img class="modal-page__close" src="./src/img/icons/close.svg"></img>
-        <h2 class="modal-page__title">
-          Leave a request for the purchase of goods
-        </h2>
+        <img
+          class="modal-page__close"
+          src="./src/img/icons/close.svg"
+          alt="close"
+        />
         <form class="modal-page__form">
-          <input type="text" placeholder="name" id="name" />
-          <p class="on-invalid-name display-none">this field is reqiured*</p>
-          <input type="email" placeholder="email" id="email" />
-
-          <p class="on-invalid-email display-none">this field is reqiured*</p>
+          <h2 class="modal-page__title">
+            Leave a request for the purchase of goods
+          </h2>
+          <div>
+            <input type="text" placeholder="name" id="name" />
+            <p class="on-invalid-name display-none">this field is reqiured*</p>
+          </div>
+          <div>
+            <input type="email" placeholder="email" id="email" />
+            <p class="on-invalid-email display-none">this field is reqiured*</p>
+          </div>
           <p class="form__question">Your plan?</p>
-          
-          <label class="form__radio form__radio--blue">
-            <img src="./src/img/icons/CheckedWhite.svg">
-            <p>Standart</p>
-            <input type="radio" name="plan" class="radio__button">
-          </label>
-          
-          <label class="form__radio form__radio--orange">
-            <input type="radio" name="plan" class="radio__button">
-          </label>
-          
-          <label class="form__radio form__radio--yellow">
-            <input type="radio" name="plan" class="radio__button">
-          </label>
-          
+
+          <div class="form__radio">
+            <input
+              type="radio"
+              name="radio"
+              id="standart"
+              class="radio-standart radio-input"
+            />
+            <label for="standart" class="form__label-standart">
+              <img
+                src="./src/img/icons/CheckedWhite.svg"
+                alt="er"
+                class="radio__img"
+              />
+              <span class="radio__title">Standart</span>
+            </label>
+          </div>
+
+          <div class="form__radio">
+            <input
+              type="radio"
+              name="radio"
+              id="premium"
+              class="radio-premium radio-input"
+            />
+            <label for="premium" class="form__label-premium">
+              <img
+                src="./src/img/icons/CheckedWhite.svg"
+                alt="er"
+                class="radio__img"
+              />
+              <span class="radio__title">Premium</span>
+            </label>
+          </div>
+
+          <div class="form__radio">
+            <input
+              type="radio"
+              name="radio"
+              id="lifetime"
+              class="radio-lifeTime radio-input"
+            />
+            <label for="lifetime" class="form__label-lifeTime">
+              <img
+                src="./src/img/icons/CheckedWhite.svg"
+                alt="er"
+                class="radio__img"
+              />
+              <span class="radio__title">Lifetime</span>
+            </label>
+          </div>
           <p class="form__question">How did you know about our app?</p>
-          
           <div class="form__checkbox">
             <label class="checkbox__item">
+              <input type="checkbox" class="checkbox__facebook checkbox-input" />
               <span class="fake-checkbox"></span>
-              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">Facebook</span>
             </label>
             <label class="checkbox__item">
+              <input type="checkbox" class="checkbox__instagram checkbox-input" />
               <span class="fake-checkbox"></span>
-              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">Instagram</span>
             </label>
             <label class="checkbox__item">
+              <input type="checkbox" class="checkbox__youtube checkbox-input" />
               <span class="fake-checkbox"></span>
-              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">YouTube</span>
             </label>
             <label class="checkbox__item">
+              <input type="checkbox" class="checkbox__other checkbox-input" />
               <span class="fake-checkbox"></span>
-              <input type="checkbox" class="checkbox__input" />
               <span class="checkbox__title">Other</span>
             </label>
           </div>
-          <button type="button" class="prime-button form__button-submit">send</button>
+          <button type="button" class="prime-button form__button-submit">
+            send
+          </button>
+          <div class="form__loading">
+            <img
+              class="loading__img"
+              src="./src/img/icons/Loading.svg"
+              alt="Loading"
+            />
+            <p class="loading__title">Loading...</p>
+          </div>
         </form>
       </div>
     </section>

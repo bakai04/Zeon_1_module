@@ -1,4 +1,6 @@
-
+.change-mode{
+    transition: all ease-in-out 0.5s;
+}
 .dark-mode{
     background-color: #222222;
     color:#FFFFFF;
@@ -34,6 +36,7 @@
 
 .change-mode__inner hr {
     width: 600px;
+    background: #E5E5E5;
     padding: 0px;
     transform: translateY(-15px);
 }
@@ -42,11 +45,12 @@
     justify-content: center;
 }
 
-.dark, .light {
+.dark-btn, .light-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: none;
+    transition: all ease-in-out 0.5s;
     margin: 40px 20px 0px 20px;
     font-weight: 400;
     font-size: 14px;
@@ -56,10 +60,14 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.dark-btn{
+    color: #222222;
+}
 .dark{
     color:#222222
 }
 .light__svg, .dark__svg{
+    transition: all ease-in-out 0.5s;
     margin-bottom: 5px;
 }
 .active path {
