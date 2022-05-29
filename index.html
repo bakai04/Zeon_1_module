@@ -36,32 +36,45 @@
               </button>
             </form>
           </nav>
-          <!-- <button class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button> -->
         </div>
       </div>
     </header>
-    <!-- <div class="mobail-menu">
+    <button class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobail-menu">
       <div class="container">
         <div class="mobail-menu__inner">
-          <nav class="menu">
-            <a class="menu__item" href="#features">Features</a>
-            <a class="menu__item" href="#pricing">Pricing</a>
-            <a class="menu__item" href="#testimonials">Testimonials</a>
-            <a class="menu__item" href="#faq">FAQ</a>
-            <a href="https://www.apple.com/ru/app-store/" target="_blank">
+          <nav class="mobail-menu__nav">
+            <a class="mobail-menu__logo" href="#">
+              <img
+                width="40"
+                height="40"
+                src="./src/img/icons/logo.svg"
+                alt="logo"
+              />
+              <p>H(app)y</p>
+            </a>
+            <a class="nav__item" href="#features">Features</a>
+            <a class="nav__item" href="#pricing">Pricing</a>
+            <a class="nav__item" href="#testimonials">Testimonials</a>
+            <a class="nav__item" href="#faq">FAQ</a>
+            <form
+              action="https://www.apple.com/ru/app-store/"
+              class="nav__button"
+              target="_blank"
+            >
               <button class="prime-button background_black" type="button">
                 Get this app
               </button>
-            </a>
+            </form>
           </nav>
         </div>
       </div>
-    </div> -->
-    <section id="sale">
+    </div>
+    <section id="sale" class="display-none">
       <div class="container">
         <div class="sale__inner">
           <h2 class="sale__title">big sale on lifetime plan</h2>
@@ -377,7 +390,7 @@
           <div class="pricing__cards">
             <article class="price">
               <h3 class="price__title blue">Standart</h3>
-              <p class="price__dollar blue">$9</p>
+              <p class="price__dollar blue">$0</p>
               <p class="price__subtitle">Monthly</p>
               <button
                 class="prime-button background_blue buy-now"
@@ -388,9 +401,9 @@
             </article>
 
             <article class="price">
-              <h3 class="price__title orange">Standart</h3>
-              <p class="price__dollar orange">$9</p>
-              <p class="price__subtitle">Monthly</p>
+              <h3 class="price__title orange">Premium</h3>
+              <p class="price__dollar orange">$0</p>
+              <p class="price__subtitle">Annually</p>
               <button
                 class="prime-button background_orange buy-now"
                 type="button"
@@ -400,9 +413,9 @@
             </article>
 
             <article class="price">
-              <h3 class="price__title yellow">Standart</h3>
-              <p class="price__dollar yellow">$9</p>
-              <p class="price__subtitle">Monthly</p>
+              <h3 class="price__title yellow">Lifetime</h3>
+              <p class="price__dollar yellow">$0</p>
+              <p class="price__subtitle">up front</p>
               <button
                 class="prime-button background_yellow buy-now"
                 type="button"
@@ -595,12 +608,18 @@
           <p class="form__question">How did you know about our app?</p>
           <div class="form__checkbox">
             <label class="checkbox__item">
-              <input type="checkbox" class="checkbox__facebook checkbox-input" />
+              <input
+                type="checkbox"
+                class="checkbox__facebook checkbox-input"
+              />
               <span class="fake-checkbox"></span>
               <span class="checkbox__title">Facebook</span>
             </label>
             <label class="checkbox__item">
-              <input type="checkbox" class="checkbox__instagram checkbox-input" />
+              <input
+                type="checkbox"
+                class="checkbox__instagram checkbox-input"
+              />
               <span class="fake-checkbox"></span>
               <span class="checkbox__title">Instagram</span>
             </label>
@@ -614,6 +633,9 @@
               <span class="fake-checkbox"></span>
               <span class="checkbox__title">Other</span>
             </label>
+            <p class="on-invalid-checkbox display-none">
+              this field is reqiured*
+            </p>
           </div>
           <button type="button" class="prime-button form__button-submit">
             send

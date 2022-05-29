@@ -36,6 +36,7 @@
 
 .change-mode__inner hr {
     width: 600px;
+    border: 1px solid #E5E5E5; 
     background: #E5E5E5;
     padding: 0px;
     transform: translateY(-15px);

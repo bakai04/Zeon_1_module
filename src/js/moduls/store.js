@@ -4,7 +4,7 @@ const getStore = async ()=>{
     if (store) {
       return store;
     } else {
-      return new Error('happened some shit!!!')
+      return new Error('An error has occurred')
     }
 };
 
