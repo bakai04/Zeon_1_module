@@ -1,8 +1,7 @@
 function price(plans) {
     const priceTitle=document.querySelectorAll(".price__title");
     const priceDollar=document.querySelectorAll(".price__dollar");
-
-    for(let i=0; i<=plans.length; i++){
+    for(let i=0; i<=plans.length-1; i++){
         priceTitle[i].textContent=plans[i].name;
         priceDollar[i].textContent="$"+plans[i].price;
     }

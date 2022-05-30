@@ -18,14 +18,13 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    display: none;
 }
 .menu__item{
     margin-right: 42px;
 }
 .burger {
     position: fixed;
-
+    display: none;
     z-index: 1000;
     top: 25px;
     right: 100px;

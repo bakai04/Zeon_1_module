@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     padding: 92px 90px 0px 62px;
-    align-items: center;
 }
 
 .digital__logo{
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 .digital__logo p{
     color: #222222;
@@ -36,4 +36,14 @@
     color: #222222;
     margin-bottom: 20px;
 }
+.digital__half-phone{
+    height: 548px;
+    width: 376px;
+    overflow: hidden;
+}
+.digital__half-phone img{
+    width: 376px;
+    overflow: hidden;
+}
+
 

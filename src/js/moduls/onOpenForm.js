@@ -1,5 +1,7 @@
 function form() {
+  
   document.querySelector(".modal-page").classList.toggle("display-none");
+  document.querySelector("body").classList.toggle("overflow-hiden");
 }
 
 function radioDefaultActive(index) {
@@ -10,7 +12,6 @@ function radioDefaultActive(index) {
 function onOpenForm() {
   const buyNowBtn = document.querySelectorAll(".buy-now");
   const modalPageClose = document.querySelector(".modal-page__close");
-  
   modalPageClose.addEventListener("click", () => {
     form();
   });
