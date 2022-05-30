@@ -1,0 +1,18 @@
+@media(max-width: 1168px){ 
+    .testimonial {
+        padding: 20px 20px 24px 20px;
+        width: 310px;
+    }
+}
+@media(max-width: 990px){
+    .testimonials__cards {
+        flex-direction: column;
+        align-items: center;
+    }    
+    .testimonial {
+        padding: 30px 30px 34px 30px;
+        width: 379px;
+        height: 224px;
+        margin-bottom: 16px;
+    }
+}

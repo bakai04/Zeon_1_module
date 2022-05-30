@@ -1,21 +1,21 @@
-
-.digital__inner{
+.digital__inner {
     display: flex;
     justify-content: space-between;
     padding: 92px 90px 0px 62px;
 }
 
-.digital__logo{
+.digital__logo {
     display: flex;
     align-items: center;
     margin-top: 40px;
 }
-.digital__logo p{
+
+.digital__logo p {
     color: #222222;
     font-size: 25px;
     font-weight: 600;
     margin-left: 8px;
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
 }
 
 .digital__title {
@@ -36,14 +36,13 @@
     color: #222222;
     margin-bottom: 20px;
 }
-.digital__half-phone{
+
+.digital__half-phone {
     height: 548px;
     width: 376px;
     overflow: hidden;
 }
-.digital__half-phone img{
+
+.digital__half-phone img {
     width: 376px;
-    overflow: hidden;
 }
-
-

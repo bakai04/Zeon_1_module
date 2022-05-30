@@ -5,7 +5,7 @@ import {
   onGetSelectedPlan,
   loading,
 } from "./validatingInputs.js";
-
+import { form } from "./onOpenForm.js";
 
 function sendBtn() {
   const nameInput = document.querySelector(".name");
@@ -32,7 +32,7 @@ function sendBtn() {
     let inputEmailValid = inputEmailValidation(emailInput.value);
     let inputCheckboxValid = onGetSelectedCheckbox();
     let inputRadioValid = onGetSelectedPlan();
-    
+
     if (
       inputNameValid !== undefined &&
       inputEmailValid !== undefined &&
@@ -45,6 +45,9 @@ function sendBtn() {
         messanger: inputCheckboxValid,
         plan: inputRadioValid,
       });
+      setTimeout(() => {
+        form();
+      }, 3300);
     }
   });
 }

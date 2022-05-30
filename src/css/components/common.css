@@ -68,10 +68,6 @@ html {
     transition: all ease-in-out 0.1s;
 }
 
-.prime-button a {
-    color: #FFFFFF;
-}
-
 .prime-button:hover {
     background-color: #4E4E4E;
 }

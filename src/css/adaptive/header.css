@@ -1,0 +1,15 @@
+@media(max-width: 820px){
+    .header__inner {
+        padding: 15px 0px;
+    }
+    .menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .mobail-menu__close{
+        top: 26px;
+        right: 26px;
+    }
+}

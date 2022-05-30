@@ -4,6 +4,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15)
 }
@@ -22,12 +23,15 @@ header {
 .menu__item{
     margin-right: 42px;
 }
+.mobail-menu__close{
+    position: absolute;
+    top: 26px;
+    right: 26px;
+}
 .burger {
-    position: fixed;
+    position: relative;
     display: none;
     z-index: 1000;
-    top: 25px;
-    right: 100px;
     width: 36px;
     height: 36px;
     border-radius: 20px;
@@ -44,7 +48,7 @@ header {
 }
 .burger span {
     width: 16px;
-    height: 3px;
+    height: 2px;
     background-color: #222222;
     position: absolute;
     z-index: 20;
@@ -57,11 +61,11 @@ header {
 }
 
 .burger span:nth-of-type(2) {
-    top: calc(47% - 5px);
+    top: calc(47% - 6px);
 }
 
 .burger span:nth-of-type(3) {
-    top: calc(47% + 5px);
+    top: calc(47% + 6px);
 }
 
 .burger.active span:first-of-type {

@@ -1,5 +1,4 @@
-function form() {
-  
+export function form() {
   document.querySelector(".modal-page").classList.toggle("display-none");
   document.querySelector("body").classList.toggle("overflow-hiden");
 }
@@ -15,7 +14,7 @@ function onOpenForm() {
   modalPageClose.addEventListener("click", () => {
     form();
   });
-  
+
   for (let i = 0; i <= 3; i++) {
     buyNowBtn[i].addEventListener("click", () => {
       form();

@@ -1,0 +1,36 @@
+@media(max-width: 820px){
+    #sale {
+        margin-top: 70px;
+    }
+}
+@media(max-width: 770px){
+    .sale__title {
+        font-size: 40px;
+    }
+    .timer {
+        width: 90%;
+    }
+    .count {
+        font-size: 80px;
+    }
+}
+@media(max-width: 600px){
+    .sale__title {
+        font-size: 35px;
+    }
+    .timer {
+        width: 90%;
+    }
+    .timer span {
+        font-weight: 300;
+        font-size: 70px;
+    }
+    
+    .count {
+        font-size: 70px;
+    }
+    .timer__count p {
+        font-size: 20px;
+    }
+}
+

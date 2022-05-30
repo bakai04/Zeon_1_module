@@ -1,0 +1,5 @@
+@media(max-width: 600px){
+    .download__text{
+        width: 400px;
+    }
+}

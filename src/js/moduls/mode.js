@@ -7,12 +7,11 @@ function changeMode(mode) {
 
   activeMode.textContent = mode;
   modeTitle.textContent = mode + " mode";
-  
+
   darkBtn.classList.toggle("active");
   lightBtn.classList.toggle("active");
   changeMode.classList.toggle("dark-mode");
 }
-
 
 function mode() {
   const lightBtn = document.querySelector(".light-btn");

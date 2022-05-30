@@ -19,6 +19,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;               
+    top: 50%;   
+    left: 0px;
+    right: 0px;                      
+    transform: translate(0, -50%)
 }
 
 .mobail-menu__nav {

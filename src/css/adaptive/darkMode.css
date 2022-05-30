@@ -1,0 +1,15 @@
+@media(max-width: 600px){
+    .change-mode__title {
+        font-size: 12px;
+    }
+    .change-mode__text {
+        font-size: 18px;
+        width: 450px;
+    }
+    .change-mode__img {
+        width: 300px;
+    }
+    .change-mode__inner hr {
+        width: 400px;
+    }
+}

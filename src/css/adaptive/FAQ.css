@@ -1,0 +1,12 @@
+@media(max-width: 1168px){ 
+    .question-answers__inner {
+        width: 450px;
+        margin-top: 26px;
+    }
+}
+@media(max-width: 990px){
+    .question-answers__inner {
+        width: fit-content;
+        margin-top: 26px;
+    }
+}
