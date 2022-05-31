@@ -43,6 +43,9 @@
 }
 
 .form__question {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     margin: 22px 0px 10px 0px;
 }
 
@@ -56,6 +59,7 @@
     border-radius: 4px;
     background-color: #F2F2F2;
 }
+
 .name:focus,
 .email:focus {
     outline: 2px solid #0278ED;
@@ -70,10 +74,11 @@
     color: #7D7D7D;
 }
 
-.error{
+.error {
     background-color: #FFEEEE;
 }
-.error:focus{
+
+.error:focus {
     outline: 2px solid #FF5437;
 }
 
@@ -84,7 +89,6 @@
     align-items: center;
     width: 330px;
     height: 42px;
-
 }
 
 .radio-standart,
@@ -206,16 +210,19 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .checkbox__instagram:checked+.fake-checkbox {
     background-image: url(../../img/icons/Checked.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .checkbox__youtube:checked+.fake-checkbox {
     background-image: url(../../img/icons/Checked.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .checkbox__other:checked+.fake-checkbox {
     background-image: url(../../img/icons/Checked.svg);
     background-repeat: no-repeat;
@@ -225,7 +232,7 @@
 .checkbox__facebook,
 .checkbox__instagram,
 .checkbox__youtube,
-.checkbox__other{
+.checkbox__other {
     display: none;
 }
 

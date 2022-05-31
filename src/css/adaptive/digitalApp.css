@@ -56,32 +56,26 @@
 }
 
 @media(max-width: 600px) {
+    .digital__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }   
+    .digital__title,.digital__text{
+        width: 335px;
+    }
+    .digital__logo {
+        display: flex;
+        justify-content: center;
+    }
     .digital__title {
-        width: 300px;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 25px;
     }
-
-    .digital__logo img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .digital__logo p {
-        font-size: 17px;
-    }
-
-    .digital__text {
-        width: 250px;
-        font-size: 12px;
-    }
-
     .digital__half-phone {
         height: 300px;
-        width: 200px;
     }
-
-    .digital__half-phone img {
-        width: 200px;
+    .digital__inform{
+        text-align: center;
     }
 }

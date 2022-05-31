@@ -2,9 +2,11 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
-.overflow-hiden{
+
+.overflow-hiden {
     overflow: hidden;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -87,14 +89,18 @@ html {
 }
 
 .change-mode__subtitle,
-.pricing__subtitle {
+.pricing__subtitle,
+.download__subtitle,
+.testimonials__subtitle {
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     text-align: center;
     margin: 5px 0px 14px 0px;
 }
-.menu__item,.nav__item{
+
+.menu__item,
+.nav__item {
     list-style: none;
     font-weight: 400;
     font-size: 14px;
@@ -102,11 +108,15 @@ html {
     color: #666666;
     cursor: pointer;
 }
-.header__logo,.mobail-menu__logo{
+
+.header__logo,
+.mobail-menu__logo {
     display: flex;
     align-items: center;
 }
-.header__logo p,.mobail-menu__logo p{
+
+.header__logo p,
+.mobail-menu__logo p {
     color: #222222;
     font-size: 17px;
     font-weight: 600;

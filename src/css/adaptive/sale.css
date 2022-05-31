@@ -33,4 +33,21 @@
         font-size: 20px;
     }
 }
-
+@media(max-width: 530px){
+    .sale__title {
+        font-size: 40px;
+    }
+    .sale__subtitle {
+        font-size: 18px;
+    }
+    .count {
+        font-size: 40px;
+    }
+    .timer span {
+        font-size: 40px;
+    }
+    .timer__count p {
+        font-size: 12px;
+    }
+    
+}

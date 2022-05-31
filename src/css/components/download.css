@@ -13,12 +13,7 @@
 }
 
 .download__subtitle {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
     color: #222222;
-    margin: 5px 0px 14px 0px;
 }
 .download__text{
     width: 589px;

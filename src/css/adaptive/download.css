@@ -3,3 +3,8 @@
         width: 400px;
     }
 }
+@media(max-width: 530px){
+    .download__text {
+        width: 335px;
+    }
+}

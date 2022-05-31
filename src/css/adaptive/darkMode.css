@@ -13,3 +13,12 @@
         width: 400px;
     }
 }
+@media(max-width: 530px){
+    .change-mode__text {
+        font-size: 14px;
+        width: 335px;
+    }
+    .change-mode__inner hr {
+        width: 335px;
+    }
+}

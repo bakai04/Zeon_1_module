@@ -16,3 +16,11 @@
         margin-bottom: 16px;
     }
 }
+@media(max-width: 530px){
+    .testimonial {
+        padding: 30px 30px 34px 30px;
+        width: 335px;
+        height: 224px;
+        margin-bottom: 16px;
+    }
+}

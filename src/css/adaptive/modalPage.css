@@ -1,0 +1,30 @@
+@media(max-width: 530px) {
+    .modal-page__title {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .name,
+    .email {
+        width: 250px;
+        height: 30px;
+    }
+
+    .form__radio {
+        width: 250px;
+        height: 30px;
+    }
+
+    .form__label-lifeTime,
+    .form__label-premium,
+    .form__label-standart {
+        width: 250px;
+        height: 40px;
+    }
+    .checkbox__title {
+        font-size: 14px;
+    }
+    .form__question {
+        font-size: 14px;
+    }
+}
