@@ -548,11 +548,11 @@
           </h2>
           <div>
             <input type="text" placeholder="name" class="name" />
-            <p class="on-invalid-name display-none">this field is reqiured*</p>
+            <p class="on-invalid-input"></p>
           </div>
           <div>
             <input type="email" placeholder="email" class="email" />
-            <p class="on-invalid-email display-none">this field is reqiured*</p>
+            <p class="on-invalid-input"></p>
           </div>
           <p class="form__question">Your plan?</p>
 
@@ -560,16 +560,16 @@
             <input
               type="radio"
               name="radio"
-              id="standart"
-              class="radio-standart radio-input"
+              id="first"
+              class="radio-first radio-input"
             />
-            <label for="standart" class="form__label-standart">
+            <label for="first" class="form__label-first">
               <img
                 src="./src/img/icons/CheckedWhite.svg"
                 alt="er"
                 class="radio__img"
               />
-              <span class="radio__title">Standart</span>
+              <span class="radio__title"></span>
             </label>
           </div>
 
@@ -577,16 +577,16 @@
             <input
               type="radio"
               name="radio"
-              id="premium"
-              class="radio-premium radio-input"
+              id="second"
+              class="radio-second radio-input"
             />
-            <label for="premium" class="form__label-premium">
+            <label for="second" class="form__label-second">
               <img
                 src="./src/img/icons/CheckedWhite.svg"
                 alt="er"
                 class="radio__img"
               />
-              <span class="radio__title">Premium</span>
+              <span class="radio__title"></span>
             </label>
           </div>
 
@@ -594,16 +594,16 @@
             <input
               type="radio"
               name="radio"
-              id="lifetime"
-              class="radio-lifeTime radio-input"
+              id="third"
+              class="radio-third radio-input"
             />
-            <label for="lifetime" class="form__label-lifeTime">
+            <label for="third" class="form__label-third">
               <img
                 src="./src/img/icons/CheckedWhite.svg"
                 alt="er"
                 class="radio__img"
               />
-              <span class="radio__title">Lifetime</span>
+              <span class="radio__title"></span>
             </label>
           </div>
           <p class="form__question">How did you know about our app?</p>
@@ -641,7 +641,7 @@
           <button type="button" class="prime-button form__button-submit">
             send
           </button>
-          <div class="form__loading">
+          <div class="form__loading display-none">
             <img
               class="loading__img"
               src="./src/img/icons/Loading.svg"

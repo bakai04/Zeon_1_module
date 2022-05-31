@@ -14,8 +14,6 @@
         padding: 40px 0px 0px 0px;
         margin: 16px 0px 0px 0px;
     }
-}
-@media(max-width: 770px){
     .features__cards {
         display: flex;
         justify-content: center;
@@ -26,11 +24,15 @@
 @media(max-width: 530px){
     .features__text {
         font-size: 20px;
-        width: 335px;
+        width: 280px;
     }
     .features__card {
-        width: 335px;
+        width: 280px;
         padding: 40px 0px 0px 0px;
         margin: 16px 0px 0px 0px;
+    }
+    .card__text {
+        width: 250px;
+        font-size: 14px;
     }
 }

@@ -1,8 +1,7 @@
 import {
-  inputEmailValidation,
-  inputNameValidation,
-  onGetSelectedCheckbox,
-  onGetSelectedPlan,
+  getSelectedCheckbox,
+  getSelectedPlan,
+  checkInput,
   loading,
 } from "./validatingInputs.js";
 import { form } from "./onOpenForm.js";
@@ -10,44 +9,45 @@ import { form } from "./onOpenForm.js";
 function sendBtn() {
   const nameInput = document.querySelector(".name");
   const emailInput = document.querySelector(".email");
+
   const sendButton = document.querySelector(".form__button-submit");
   const checkboxInput = document.querySelectorAll(".checkbox-input");
 
-  nameInput.addEventListener("input", () => {
-    inputNameValidation(nameInput.value);
-  });
-
-  emailInput.addEventListener("input", () => {
-    inputEmailValidation(emailInput.value);
-  });
-
-  for (let i = 0; i < checkboxInput.length; i++) {
-    checkboxInput[i].addEventListener("click", () => {
-      onGetSelectedCheckbox();
-    });
-  }
-
   sendButton.addEventListener("click", () => {
-    let inputNameValid = inputNameValidation(nameInput.value);
-    let inputEmailValid = inputEmailValidation(emailInput.value);
-    let inputCheckboxValid = onGetSelectedCheckbox();
-    let inputRadioValid = onGetSelectedPlan();
+    let inputNameValid = checkInput(nameInput, 0);
+    let inputEmailValid = checkInput(emailInput, 1);
+    let inputCheckboxValid = getSelectedCheckbox();
+    let inputRadioValid = getSelectedPlan();
+
+    nameInput.addEventListener("input", () => {
+      checkInput(nameInput, 0);
+    });
+    emailInput.addEventListener("input", () => {
+      checkInput(emailInput, 1);
+    });
+
+    for (let i = 0; i < checkboxInput.length; i++) {
+      checkboxInput[i].addEventListener("click", () => {
+        getSelectedCheckbox();
+      });
+    }
 
     if (
-      inputNameValid !== undefined &&
-      inputEmailValid !== undefined &&
-      inputCheckboxValid !== ""
+      inputNameValid !== "" &&
+      inputEmailValid !== "" &&
+      inputCheckboxValid.length !== 0
     ) {
       loading();
-      console.log({
-        name: inputNameValid,
-        email: inputEmailValid,
-        messanger: inputCheckboxValid,
-        plan: inputRadioValid,
-      });
       setTimeout(() => {
+        console.log({
+          name: inputNameValid,
+          email: inputEmailValid,
+          socialMedia: inputCheckboxValid,
+          plan: inputRadioValid,
+        });
+        loading();
         form();
-      }, 3300);
+      }, 3000);
     }
   });
 }

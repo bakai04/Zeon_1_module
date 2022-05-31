@@ -4,7 +4,7 @@ export function form() {
 }
 
 function radioDefaultActive(index) {
-  const radioBtn = ["#lifetime", "#standart", "#premium", "#lifetime"];
+  const radioBtn = ["#third", "#first", "#second", "#third"];
   document.querySelector(radioBtn[index]).checked = true;
 }
 

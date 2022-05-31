@@ -1,0 +1,29 @@
+{
+  "name": "zeon-1-module",
+  "version": "1.0.0",
+  "description": "zeon-1-module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakai04/Zeon_1_module.git"
+  },
+  "keywords": [
+    "js",
+    "javaScript"
+  ],
+  "author": "Bakai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakai04/Zeon_1_module/issues"
+  },
+  "homepage": "https://github.com/bakai04/Zeon_1_module#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+
+}

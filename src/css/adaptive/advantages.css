@@ -17,22 +17,21 @@
 
 @media(max-width: 600px) {
     .advantages__inner {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 80px 30px 100px 30px;
-    }
-    .advantages__items {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }    
     .advantages__title {
         margin-top: 0px;
+    }
+    .advantages__items {
+        margin-top: 20px
     }
 }
 @media(max-width: 530px){
     .advantages__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 80px 0px 100px 0px;
     }
     .advantages__statistics {
