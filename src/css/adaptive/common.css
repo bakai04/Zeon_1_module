@@ -1,10 +1,32 @@
 @media(max-width: 1168px) {
     .container {
-        max-width: 100%;
-        padding: 0px 30px 0px 30px;
+        max-width: 950px;
     }
 }
+
+@media(max-width: 990px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media(max-width: 820px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media(max-width: 770px) {
+    .container {
+        max-width: 650px;
+    }
+}
+
 @media(max-width: 600px) {
+    .container {
+        max-width: 500px;
+    }
+
     .prime-button {
         font-size: 12px;
         padding: 9px 22px 9px 22px;
@@ -12,6 +34,10 @@
 }
 
 @media(max-width: 530px) {
+    .container {
+        max-width: 335px;
+    }
+
     .change-mode__subtitle,
     .download__subtitle,
     .pricing__subtitle,

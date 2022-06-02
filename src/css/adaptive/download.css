@@ -1,4 +1,4 @@
-@media(max-width: 680px){
+@media(max-width: 600px){
     .download__text{
         width: 400px;
     }
@@ -6,10 +6,5 @@
 @media(max-width: 530px){
     .download__text {
         width: 335px;
-    }
-}
-@media(max-width: 380px) {
-    .download__text {
-        width: 280px;
     }
 }

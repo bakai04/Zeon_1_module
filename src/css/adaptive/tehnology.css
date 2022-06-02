@@ -40,7 +40,7 @@
     }
 }
 
-@media(max-width: 680px) {
+@media(max-width: 600px) {
     .tehnology__inner {
         padding: 40px 0px 0px 0px;
     }
@@ -57,10 +57,20 @@
         height: 300px;
         overflow: hidden;
     }
+
+    .tehnology:nth-child(2n).tehnology__img {
+        order: 2;
+    }
+
     .tehnology__inform {
         text-align: center;
         margin-bottom: 20px;
     }
+
+    .tehnology:nth-child(2n).tehnology__inform {
+        order: 1;
+    }
+
     .tehnology__title {
         margin-top: 20px;
     }
@@ -69,4 +79,5 @@
     .tehnology__text {
         width: 335px;
     }
+
 }

@@ -1,13 +1,10 @@
 function price(plans) {
     const priceTitle=document.querySelectorAll(".price__title");
     const priceDollar=document.querySelectorAll(".price__dollar");
-    const radioTitle=document.querySelectorAll(".radio__title");
-    console.log(plans)
-    plans.forEach((element, index) => {
-        priceTitle[index].textContent=element.name;
-        priceDollar[index].textContent="$"+element.price;
-        radioTitle[index].textContent=element.name;
-    });
+    for(let i=0; i<=plans.length-1; i++){
+        priceTitle[i].textContent=plans[i].name;
+        priceDollar[i].textContent="$"+plans[i].price;
+    }
 }
 
 export default price;

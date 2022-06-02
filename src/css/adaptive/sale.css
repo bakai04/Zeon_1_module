@@ -5,7 +5,7 @@
 }
 @media(max-width: 770px){
     .sale__title {
-        font-size: 38px;
+        font-size: 40px;
     }
     .timer {
         width: 90%;
@@ -49,15 +49,5 @@
     .timer__count p {
         font-size: 12px;
     }
-}
-@media(max-width: 380px){
-    .count {
-        font-size: 30px;
-    }
-    .timer span {
-        font-size: 30px;
-    }
-    .timer__count p {
-        font-size: 8px;
-    }
+    
 }
