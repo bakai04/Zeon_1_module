@@ -22,10 +22,10 @@ function renderTimer(timeClass, count) {
   );
 }
 
-function timer(data) {
+function timer(timerEndDate) {
   const sale = document.querySelector("#sale");
   const date = new Date();
-  let endDate = dataParsing(data.timerEndDate);
+  let endDate = dataParsing(timerEndDate);
 
   function timerCount(endDate) {
     const date = new Date();

@@ -20,10 +20,10 @@ function openMobailMenu() {
     onOpenMobailMenu();
   });
 
-  for (let i = 0; i != linkToScroll.length; i++) {
-    linkToScroll[i].addEventListener("click", () => {
+  linkToScroll.forEach(element => {
+    element.addEventListener("click", ()=>{
       onOpenMobailMenu();
-    });
-  }
+    })
+  });
 }
 export default openMobailMenu;

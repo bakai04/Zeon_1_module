@@ -1,10 +1,7 @@
-export function form() {
-  document.querySelector(".modal-page").classList.toggle("display-none");
-  document.querySelector("body").classList.toggle("overflow-hiden");
-}
+import {openForm} from "./validatingFormFunctions.js";
 
 function radioDefaultActive(index) {
-  const radioBtn = ["#lifetime", "#standart", "#premium", "#lifetime"];
+  const radioBtn = ["#third", "#first", "#second", "#third"];
   document.querySelector(radioBtn[index]).checked = true;
 }
 
@@ -12,12 +9,12 @@ function onOpenForm() {
   const buyNowBtn = document.querySelectorAll(".buy-now");
   const modalPageClose = document.querySelector(".modal-page__close");
   modalPageClose.addEventListener("click", () => {
-    form();
+    openForm();
   });
 
   for (let i = 0; i <= 3; i++) {
     buyNowBtn[i].addEventListener("click", () => {
-      form();
+      openForm();
       radioDefaultActive(i);
     });
   }

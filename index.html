@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link href="./src/css/main.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -542,34 +541,32 @@
           src="./src/img/icons/close.svg"
           alt="close"
         />
-        <form class="modal-page__form">
+        <form class="modal-page__form" id="form" onsubmit="return false;">
           <h2 class="modal-page__title">
             Leave a request for the purchase of goods
           </h2>
           <div>
-            <input type="text" placeholder="name" class="name" />
-            <p class="on-invalid-name display-none">this field is reqiured*</p>
+            <input type="text" placeholder="name" class="name" name="name"/>
+            <p class="warning-name-error"></p>
           </div>
           <div>
-            <input type="email" placeholder="email" class="email" />
-            <p class="on-invalid-email display-none">this field is reqiured*</p>
+            <input type="email" placeholder="email" class="email" name="email"/>
+            <p class="warning-email-error"></p>
           </div>
           <p class="form__question">Your plan?</p>
-
           <div class="form__radio">
             <input
               type="radio"
               name="radio"
-              id="standart"
-              class="radio-standart radio-input"
-            />
-            <label for="standart" class="form__label-standart">
+              id="first"
+              class="radio-first radio-input"/>
+            <label for="first" class="form__label-first">
               <img
                 src="./src/img/icons/CheckedWhite.svg"
                 alt="er"
                 class="radio__img"
               />
-              <span class="radio__title">Standart</span>
+              <span class="radio__title"></span>
             </label>
           </div>
 
@@ -577,16 +574,15 @@
             <input
               type="radio"
               name="radio"
-              id="premium"
-              class="radio-premium radio-input"
-            />
-            <label for="premium" class="form__label-premium">
+              id="second"
+              class="radio-second radio-input"/>
+            <label for="second" class="form__label-second">
               <img
                 src="./src/img/icons/CheckedWhite.svg"
                 alt="er"
                 class="radio__img"
               />
-              <span class="radio__title">Premium</span>
+              <span class="radio__title"></span>
             </label>
           </div>
 
@@ -594,16 +590,15 @@
             <input
               type="radio"
               name="radio"
-              id="lifetime"
-              class="radio-lifeTime radio-input"
-            />
-            <label for="lifetime" class="form__label-lifeTime">
+              id="third"
+              class="radio-third radio-input"/>
+            <label for="third" class="form__label-third">
               <img
                 src="./src/img/icons/CheckedWhite.svg"
                 alt="er"
                 class="radio__img"
               />
-              <span class="radio__title">Lifetime</span>
+              <span class="radio__title"></span>
             </label>
           </div>
           <p class="form__question">How did you know about our app?</p>
@@ -634,14 +629,14 @@
               <span class="fake-checkbox"></span>
               <span class="checkbox__title">Other</span>
             </label>
-            <p class="on-invalid-checkbox display-none">
+            <p class="warning-checkbox-error display-none">
               this field is reqiured*
             </p>
           </div>
-          <button type="button" class="prime-button form__button-submit">
+          <button type="submit" class="prime-button form__button-submit">
             send
           </button>
-          <div class="form__loading">
+          <div class="form__loading display-none">
             <img
               class="loading__img"
               src="./src/img/icons/Loading.svg"

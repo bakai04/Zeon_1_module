@@ -19,6 +19,7 @@
     height: 815px;
 }
 
+
 .modal-page__form {
     display: flex;
     flex-direction: column;
@@ -91,9 +92,9 @@
     height: 42px;
 }
 
-.radio-standart,
-.radio-premium,
-.radio-lifeTime {
+.radio-first,
+.radio-second,
+.radio-third {
     -webkit-appearance: none;
     position: absolute;
 }
@@ -105,9 +106,9 @@
     height: 15px;
 }
 
-.form__label-lifeTime,
-.form__label-premium,
-.form__label-standart {
+.form__label-third,
+.form__label-second,
+.form__label-first {
     display: flex;
     align-items: center;
     width: 330px;
@@ -118,7 +119,7 @@
     cursor: pointer;
 }
 
-.form__label-standart {
+.form__label-first {
     background: #FAFAFA;
     border: 1px solid #0278ED;
     border-radius: 4px;
@@ -126,7 +127,7 @@
     color: #0278ED;
 }
 
-.form__label-premium {
+.form__label-second {
     background: #FAFAFA;
     border: 1px solid #FF5437;
     border-radius: 4px;
@@ -136,6 +137,7 @@
 .radio__title {
     display: block;
     margin: 0 auto;
+    text-transform: capitalize;
 }
 
 .form__label-life {
@@ -150,7 +152,7 @@
     margin-top: 40px;
 }
 
-.form__label-lifeTime {
+.form__label-third {
     background: #FAFAFA;
     border: 1px solid #FF9209;
     border-radius: 4px;
@@ -158,17 +160,17 @@
     color: #FF9209;
 }
 
-.radio-standart:checked+.form__label-standart {
+.radio-first:checked+.form__label-first {
     background: #0278ED;
     color: white;
 }
 
-.radio-premium:checked+.form__label-premium {
+.radio-second:checked+.form__label-second {
     background: #FF5437;
     color: white;
 }
 
-.radio-lifeTime:checked+.form__label-lifeTime {
+.radio-third:checked+.form__label-third {
     background: #FF9209;
     color: white;
 }
@@ -243,9 +245,9 @@
     height: 40px;
 }
 
-.on-invalid-email,
-.on-invalid-checkbox,
-.on-invalid-name {
+.warning-name-error,
+.warning-email-error,
+.warning-checkbox-error {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -256,7 +258,6 @@
 .form__loading {
     display: flex;
     margin-top: 32px;
-    visibility: collapse;
 }
 
 .loading__title {
@@ -268,11 +269,25 @@
     color: #7E7E7E;
 }
 
-.loading__img--active {
-    transition: cubic-bezier(0.17, 0.52, 0.93, 0.34) 3s;
-    transform: rotate(720deg);
-}
 
 .display-none {
     display: none;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+.loading__img {
+    transition: cubic-bezier(0.17, 0.52, 0.93, 0.34) 3s;
+    /* transform: rotate(720deg); */
+
+    animation-name: rotate;
+    animation-duration: 3s;
 }
