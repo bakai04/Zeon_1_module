@@ -20,6 +20,7 @@ function onFormSubmit() {
     nameInput.addEventListener("input", () => {
       checkInput(nameInput);
     });
+    
     emailInput.addEventListener("input", () => {
       checkInput(emailInput);
     });

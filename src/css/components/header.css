@@ -12,7 +12,7 @@ header {
 .header__inner {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0px;
+    padding: 25px 0px 25px 16px;
 }
 
 
@@ -27,6 +27,33 @@ header {
     position: absolute;
     top: 26px;
     right: 26px;
+}
+.menu__btn {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 18px;
+    letter-spacing: 2px;
+    padding: 10px 30px 10px 30px;
+    margin-left: 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.1s;
+    background-color: #222222;
+}
+
+.menu__btn:hover {
+    background-color: #4E4E4E;
+}
+
+.menu__btn:active {
+    transform: scale(0.98);
+}
+
+.menu__btn:focus {
+    background: #222222;
+    outline: 2px solid #5AB0FF;
 }
 .burger {
     position: relative;

@@ -11,11 +11,12 @@
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -2px;
-    margin: 13px 0px 27px 0px;
+    margin: 0px 0px 27px 0px;
 }
 .footer__link{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer__logo{
     text-align: center;

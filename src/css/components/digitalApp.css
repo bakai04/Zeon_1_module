@@ -2,7 +2,7 @@
 .digital__inner {
     display: flex;
     justify-content: space-between;
-    padding: 92px 90px 0px 62px;
+    padding: 92px 100px 0px 78px;
 }
 
 .digital__logo {
@@ -28,7 +28,13 @@
     color: #222222;
     margin: 11px 0px 17px 0px;
 }
-
+.digital__button{
+    background-color: #222222;
+    margin-left: 5px;
+}
+.digital__inform{
+    margin-top: 5px;
+}
 .digital__text {
     width: 394px;
     font-weight: 400;

@@ -13,45 +13,36 @@ html {
 
 .container {
     width: 100%;
-    max-width: 1168px;
+    max-width: 1169px;
     margin: 0 auto;
 }
 
-.blue {
+.first {
     color: #0278ED;
 }
 
-.background_blue {
+.background_first {
     background: #0278ED;
     margin-top: 20px;
-}
-
-.background_black {
-    background: #222222;
 }
 
 .black {
     color: #222222;
 }
-
-.white {
-    color: #FFFFFF
-}
-
-.orange {
+.second {
     color: #FF5437;
 }
 
-.background_orange {
+.background_second {
     background: #FF5437;
     margin-top: 20px;
 }
 
-.yellow {
+.third {
     color: #FF9209;
 }
 
-.background_yellow {
+.background_third {
     background: #FF9209;
     margin-top: 20px;
 }
@@ -90,8 +81,7 @@ html {
 
 .change-mode__subtitle,
 .pricing__subtitle,
-.download__subtitle,
-.testimonials__subtitle {
+.download__subtitle{
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
@@ -118,8 +108,8 @@ html {
 .header__logo p,
 .mobail-menu__logo p {
     color: #222222;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     margin-left: 8px;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
 }

@@ -50,18 +50,17 @@
 .price__dollar {
     font-weight: 400;
     font-size: 108px;
-    line-height: 124px;
+    line-height: 100px;
     text-align: center;
     letter-spacing: 8px;
     color: #0278ED;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 35px 0px;
 }
 
 .price__subtitle {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #222222;

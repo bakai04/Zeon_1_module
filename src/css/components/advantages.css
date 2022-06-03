@@ -5,7 +5,7 @@
 .advantages__inner {
     display: flex;
     justify-content: space-between;
-    padding: 80px 88px 100px 88px;
+    padding: 80px 88px 100px 63px;
 }
 
 .advantages__items {

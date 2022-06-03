@@ -10,7 +10,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header>
       <div class="container">
@@ -30,7 +29,7 @@
             <a class="menu__item" href="#testimonials">Testimonials</a>
             <a class="menu__item" href="#faq">FAQ</a>
             <form action="https://www.apple.com/ru/app-store/" target="_blank">
-              <button class="prime-button background_black" type="button">
+              <button class="menu__btn" type="button">
                 Get this app
               </button>
             </form>
@@ -122,10 +121,10 @@
               The H(app)y app is the latest & greatest in phone photography.
               It's available in the App Store right now. Go check it out!
             </p>
-            <button class="prime-button background_black buy-now" type="button">
-              buy now
+            <button class="digital__button prime-button buy-now" type="button">
+                buy now  
             </button>
-            <button class="prime-button background_black" type="button">
+            <button class="digital__button prime-button" type="button">
               Read more
             </button>
           </div>
@@ -156,7 +155,7 @@
                   src="./src/img/icons/Calendar.svg"
                   alt="icons"
                 />
-                <p class="card__title" style="color: #0278ed">Calendar view</p>
+                <p class="card__title-calendar">Calendar view</p>
                 <p class="card__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam
                   scelerisque aliquam odio et faucibus.
@@ -173,7 +172,7 @@
                   src="./src/img/icons/Lists.svg"
                   alt="icons"
                 />
-                <p class="card__title" style="color: #ff5437">Calendar view</p>
+                <p class="card__title-lists">Lists</p>
                 <p class="card__text">
                   Dolor sit amet urna turpis. Mauris euismod elit et nisi
                   ultrices, ut faucibus orci tincidunt.
@@ -190,7 +189,7 @@
                   src="./src/img/icons/Varied.svg"
                   alt="icons"
                 />
-                <p class="card__title" style="color: #ff9209">Calendar view</p>
+                <p class="card__title-varied">Varied type</p>
                 <p class="card__text">
                   Vestibulum ultrices, orci nec egestas pharetra, ligula est
                   semper enim, nec auctor sapien leo nec purus.
@@ -207,7 +206,7 @@
                   src="./src/img/icons/Splite.svg"
                   alt="icons"
                 />
-                <p class="card__title" style="color: #e738ce">Calendar view</p>
+                <p class="card__title-screen">Split-screen</p>
                 <p class="card__text">
                   Vestibulum ultrices, orci nec egestas pharetra, ligula est
                   semper enim, nec auctor sapien leo nec purus.
@@ -224,7 +223,7 @@
                   src="./src/img/icons/Uploads.svg"
                   alt="icons"
                 />
-                <p class="card__title" style="color: #00c6df">Calendar view</p>
+                <p class="card__title-uploads">Uploads</p>
                 <p class="card__text">
                   Duis tristique sed lorem a vestibulum. Cras commodo consequat
                   orci, in convallis risus egestas non.
@@ -241,7 +240,7 @@
                   src="./src/img/icons/Focus.svg"
                   alt="icons"
                 />
-                <p class="card__title" style="color: #b25df8">Calendar view</p>
+                <p class="card__title-focus">Focus mode</p>
                 <p class="card__text">
                   Lorem sit amet urna turpis. Mauris euismod elit et nisi
                   ultrices, ut faucibus orci tincidunt.
@@ -381,7 +380,7 @@
       <div class="container">
         <div class="pricing__inner">
           <h3 class="pricing__title">Pricing</h3>
-          <p class="pricing__subtitle">Don't take our word for it.</p>
+          <p class="pricing__subtitle">A plan for every need.</p>
           <p class="pricing__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             scelerisque aliquam odio et faucibus.
@@ -389,11 +388,11 @@
 
           <div class="pricing__cards">
             <article class="price">
-              <h3 class="price__title blue">Standart</h3>
-              <p class="price__dollar blue">$0</p>
+              <h3 class="price__title first">Standart</h3>
+              <p class="price__dollar first">$0</p>
               <p class="price__subtitle">Monthly</p>
               <button
-                class="prime-button background_blue buy-now"
+                class="prime-button background_first buy-now"
                 type="button"
               >
                 Buy now
@@ -401,11 +400,11 @@
             </article>
 
             <article class="price">
-              <h3 class="price__title orange">Premium</h3>
-              <p class="price__dollar orange">$0</p>
+              <h3 class="price__title second">Premium</h3>
+              <p class="price__dollar second">$0</p>
               <p class="price__subtitle">Annually</p>
               <button
-                class="prime-button background_orange buy-now"
+                class="prime-button background_second buy-now"
                 type="button"
               >
                 Buy now
@@ -413,11 +412,11 @@
             </article>
 
             <article class="price">
-              <h3 class="price__title yellow">Lifetime</h3>
-              <p class="price__dollar yellow">$0</p>
+              <h3 class="price__title third">Lifetime</h3>
+              <p class="price__dollar third">$0</p>
               <p class="price__subtitle">up front</p>
               <button
-                class="prime-button background_yellow buy-now"
+                class="prime-button background_third buy-now"
                 type="button"
               >
                 Buy now
@@ -434,38 +433,6 @@
           <p class="testimonials__subtitle">Don't take our word for it.</p>
           <p class="testimonials__text">See what our customers are saying.</p>
           <div class="testimonials__cards">
-            <div class="testimonial">
-              <p class="testimonial__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus.
-              </p>
-              <div class="testimonial__author">
-                <p class="author__name">Pam Beesly</p>
-                <p class="author__position">Top Manager Happy Co</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p class="testimonial__text">
-                Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
-                libero ac, cursus quam. Aenean porta neque eget consequat
-                fringilla.
-              </p>
-              <div class="testimonial__author">
-                <p class="author__name">Pam Beesly</p>
-                <p class="author__position">Top Manager Happy Co</p>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p class="testimonial__text">
-                Vestibulum ultrices, orci nec egestas pharetra, ligula est
-                semper enim, nec auctor sapien leo nec purus.
-              </p>
-              <div class="testimonial__author">
-                <p class="author__name">Pam Beesly</p>
-                <p class="author__position">Top Manager Happy Co</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

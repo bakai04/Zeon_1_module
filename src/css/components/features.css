@@ -6,6 +6,7 @@
     text-align: center;
     padding: 100px 0px;
 }
+
 .features__title {
     font-weight: 400;
     font-size: 14px;
@@ -21,7 +22,7 @@
     font-size: 32px;
     line-height: 36px;
     width: 495px;
-    margin: 0 auto 29px auto;
+    margin: 5px auto 26px auto;
     color: #FFFFFF;
 }
 
@@ -59,22 +60,44 @@
 }
 
 .card__icon {
-    margin-top: -30px;
+    margin-top: -34px;
 }
 
-.card__title {
-    margin: 18px 0px 11px 0px;
+.card__title-calendar,
+.card__title-lists,
+.card__title-varied,
+.card__title-screen,
+.card__title-uploads,
+.card__title-focus {
+    margin: 14px 0px 11px 0px;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
 }
-
+.card__title-calendar{
+    color: #0278ed;
+}
+.card__title-lists{
+    color: #ff5437;
+}
+.card__title-varied{
+    color: #ff9209;
+}
+.card__title-screen{
+    color: #e738ce;
+}
+.card__title-uploads{
+    color: #00c6df;
+}
+.card__title-focus{
+    color: #b25df8;
+}
 .card__text {
     width: 298px;
     margin: 0 auto;
+    margin-top: 0px;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
     color: #222222;
 }
-

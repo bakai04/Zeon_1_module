@@ -7,7 +7,7 @@ export function openForm() {
 export function checkInput(formInput) {
   const warningError = document.querySelector(`.warning-${formInput.name}-error`);
   let value = "";
-  
+  console.log('asd')
   if (formInput.value.length == 0) {
     formInput.classList.add("error");
     warningError.textContent = "this field is reqiured*";
