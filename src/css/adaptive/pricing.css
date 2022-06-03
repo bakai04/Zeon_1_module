@@ -50,3 +50,14 @@
         margin-bottom: 16px;
     }
 }
+@media(max-width: 350px) {
+    .pricing__text {
+        font-size: 14px;
+        width: 250px;
+    }
+    .price {
+        width: 280px;
+        height: 300px;
+        margin-bottom: 16px;
+    }
+}

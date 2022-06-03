@@ -6,17 +6,12 @@
     flex-direction: column;
     justify-content: center;
 }
-.footer__logo p{
-    color: #222222;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -2px;
-    margin: 0px 0px 27px 0px;
-}
 .footer__link{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 110px;
+    margin-top: 20px;
 }
 .footer__logo{
     text-align: center;

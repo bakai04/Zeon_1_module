@@ -6,12 +6,12 @@ import {
 } from "./validatingFormFunctions.js";
 
 function onFormSubmit() {
-  const requestForm=document.querySelector("#form");
+  const sendFormDataBtn=document.querySelector(".form__button-submit");
   const nameInput = document.querySelector(".name");
   const emailInput = document.querySelector(".email");
   const checkboxInput = document.querySelectorAll(".checkbox-input");
 
-  requestForm.addEventListener("submit", () => {
+  sendFormDataBtn.addEventListener("click", () => {
     let inputNameValue = checkInput(nameInput);
     let inputEmailValue = checkInput(emailInput);
     let selectedCheckbox = getSelectedCheckbox();

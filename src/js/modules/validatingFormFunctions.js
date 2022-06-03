@@ -3,11 +3,20 @@ export function openForm() {
   document.querySelector("body").classList.toggle("overflow-hiden");
 }
 
+function resetForm() {
+  const nameInput = document.querySelector(".name");
+  const emailInput = document.querySelector(".email");
+  const checkboxInput = document.querySelectorAll(".checkbox-input");
+  nameInput.value = "";
+  emailInput.value = "";
+  checkboxInput.forEach((el) => (el.checked = false));
+}
 
 export function checkInput(formInput) {
-  const warningError = document.querySelector(`.warning-${formInput.name}-error`);
+  const warningError = document.querySelector(
+    `.warning-${formInput.name}-error`
+  );
   let value = "";
-  console.log('asd')
   if (formInput.value.length == 0) {
     formInput.classList.add("error");
     warningError.textContent = "this field is reqiured*";
@@ -23,8 +32,6 @@ export function checkInput(formInput) {
   }
   return value;
 }
-
-
 
 export function getSelectedCheckbox() {
   const warningText = document.querySelector(".warning-checkbox-error");
@@ -63,8 +70,15 @@ function showLoadingImitation() {
   document.querySelector(".form__loading").classList.toggle("display-none");
 }
 
-export function submittingFormData(inputNameValue, inputEmailValue, selectedPlan, selectedCheckbox) {
+export function submittingFormData(
+  inputNameValue,
+  inputEmailValue,
+  selectedPlan,
+  selectedCheckbox
+) {
+  const sendFormDataBtn = document.querySelector(".form__button-submit");
   showLoadingImitation();
+  sendFormDataBtn.disabled = true;
   setTimeout(() => {
     console.log({
       name: inputNameValue,
@@ -73,6 +87,8 @@ export function submittingFormData(inputNameValue, inputEmailValue, selectedPlan
       plan: selectedPlan,
     });
     showLoadingImitation();
-    openForm()
+    openForm();
+    resetForm();
+    sendFormDataBtn.disabled = false;
   }, 3000);
 }

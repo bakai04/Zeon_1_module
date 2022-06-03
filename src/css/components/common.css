@@ -25,10 +25,6 @@ html {
     background: #0278ED;
     margin-top: 20px;
 }
-
-.black {
-    color: #222222;
-}
 .second {
     color: #FF5437;
 }
@@ -105,11 +101,3 @@ html {
     align-items: center;
 }
 
-.header__logo p,
-.mobail-menu__logo p {
-    color: #222222;
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 8px;
-    letter-spacing: -2px;
-}

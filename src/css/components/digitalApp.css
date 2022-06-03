@@ -1,22 +1,10 @@
-
 .digital__inner {
     display: flex;
     justify-content: space-between;
     padding: 92px 100px 0px 78px;
 }
-
-.digital__logo {
-    display: flex;
-    align-items: center;
+.digital__inform {
     margin-top: 40px;
-}
-
-.digital__logo p {
-    color: #222222;
-    font-size: 25px;
-    font-weight: 600;
-    margin-left: 8px;
-    letter-spacing: -1.5px;
 }
 
 .digital__title {
@@ -28,13 +16,14 @@
     color: #222222;
     margin: 11px 0px 17px 0px;
 }
-.digital__button{
+
+.digital__button {
     background-color: #222222;
     margin-left: 5px;
 }
-.digital__inform{
-    margin-top: 5px;
-}
+
+
+
 .digital__text {
     width: 394px;
     font-weight: 400;

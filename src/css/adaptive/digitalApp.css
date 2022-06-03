@@ -26,18 +26,8 @@
         font-size: 30px;
         line-height: 40px;
     }
-
-    .digital__logo {
+    .digital__inform {
         margin-top: 20px;
-    }
-
-    .digital__logo img {
-        width: 54px;
-        height: 54px;
-    }
-
-    .digital__logo p {
-        font-size: 20px;
     }
 
     .digital__text {

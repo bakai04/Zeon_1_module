@@ -42,3 +42,18 @@
         width: 300px;
     }
 }
+@media(max-width: 350px) {
+    .change-mode__text {
+        font-size: 14px;
+        width: 250px;
+    }
+
+    .change-mode__img {
+        width: 200px;
+    }
+
+    .change-mode__inner hr {
+        width: 250px;
+    }
+}
+

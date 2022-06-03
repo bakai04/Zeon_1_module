@@ -10,6 +10,11 @@
     justify-content: space-between;
     padding: 100px 100px 0px 78px;
 }
+.tehnology__inner-state{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 88px 0px 100px;
+}
 .tehnology__inform{
     margin-top: 77px;
 }

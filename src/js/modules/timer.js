@@ -16,10 +16,7 @@ function dataParsing(date) {
 }
 
 function renderTimer(timeClass, count) {
-  document.querySelector(timeClass).textContent = String(count).padStart(
-    2,
-    "0"
-  );
+  document.querySelector(timeClass).textContent = String(count).padStart(2,"0");
 }
 
 function timer(timerEndDate) {
